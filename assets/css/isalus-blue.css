@@ -50,6 +50,12 @@
 .j-forms.blue,
 .j-forms.blue .divider-text span { background-color:#f7f7f7; }
 
+.j-forms p.note{
+	padding: 20px 10px;
+	background-color: #DFF0D8;
+	border-radius: 6px;
+}
+
 /* Radio and checkbox
 =============================== */
 .j-forms.blue .checkbox:hover i,
