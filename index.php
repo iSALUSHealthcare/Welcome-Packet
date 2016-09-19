@@ -48,60 +48,60 @@
 
             <div class="content">
 
-                <!-- start token -->
-                <div class="token">
-                    <?php echo $new_token->get_token();?>
-                </div>
-                <!-- end token -->
+
 
                 <!-- start steps -->
                 <div class="j-row">
-                    <div class="span4 step">
+                    <div class="span3 step">
                         <div class="steps">
                             <span>Step 1:</span>
-                            <p>Company Information</p>
+                            <p>Company</p>
                         </div>
                     </div>
-                    <div class="span4 step">
+                    <div class="span3 step">
                         <div class="steps">
                             <span>Step 2:</span>
-                            <p>Billing Information</p>
+                            <p>Billing</p>
                         </div>
                     </div>
-                    <div class="span4 step">
+                    <div class="span3 step">
                         <div class="steps">
                             <span>Step 3:</span>
-                            <p>Providers & Schedules</p>
+                            <p>Providers</p>
                         </div>
                     </div>
-                    <div class="span4 step">
+                    <div class="span3 step">
                         <div class="steps">
                             <span>Step 4:</span>
                             <p>Users</p>
                         </div>
                     </div>
-                    <div class="span4 step">
+                    <div class="span3 step">
                         <div class="steps">
                             <span>Step 5:</span>
                             <p>Locations</p>
                         </div>
                     </div>
-                    <div class="span4 step">
+                    <div class="span3 step">
                         <div class="steps">
                             <span>Step 6:</span>
                             <p>Payers</p>
                         </div>
                     </div>
-                    <div class="span4 step">
+										<div class="span3 step">
+												<div class="steps">
+														<span>Step 7:</span>
+														<p>Additional Services</p>
+												</div>
+										</div>
+                    <div class="span3 step">
                         <div class="steps">
-                            <span>Step 7:</span>
-                            <p>Company Documents</p>
+                            <span>Step 8:</span>
+                            <p>Documents</p>
                         </div>
                     </div>
                 </div>
                 <!-- end steps -->
-
-
                 <fieldset>
                     <!-- Start Insturctions -->
                     <div class="divider gap-bottom-25"></div>
@@ -329,6 +329,90 @@
                         <!-- end contact phone -->
                     </div>
                 </fieldset>
+								<fieldset>
+									<div class="j-row">
+										<div class="span12 unit">
+												<div class="input">
+														<label class="icon-right" for="npi_type">
+																<i class="fa fa-location-arrow"></i>
+														</label>
+														<input type="text" placeholder="Group or Individual Name" id="group-name" name="group_name">
+												</div>
+										</div>
+									</div>
+								</fieldset>
+								<fieldset>
+									<div class="j-row">
+										<div class="span12 unit">
+												<div class="input">
+														<label class="icon-right" for="npi_type">
+																<i class="fa fa-location-arrow"></i>
+														</label>
+														<input type="text" placeholder="Group or Individual Name" id="group-name" name="group_name">
+												</div>
+										</div>
+									</div>
+								</fieldset>
+								<fieldset>
+									<div class="j-row">
+										<div class="span12 unit">
+												<div class="input">
+														<label class="icon-right" for="npi_type">
+																<i class="fa fa-location-arrow"></i>
+														</label>
+														<input type="text" placeholder="Group or Individual Name" id="group-name" name="group_name">
+												</div>
+										</div>
+									</div>
+								</fieldset>
+								<fieldset>
+									<div class="j-row">
+										<div class="span12 unit">
+												<div class="input">
+														<label class="icon-right" for="npi_type">
+																<i class="fa fa-location-arrow"></i>
+														</label>
+														<input type="text" placeholder="Group or Individual Name" id="group-name" name="group_name">
+												</div>
+										</div>
+									</div>
+								</fieldset>
+								<fieldset>
+									<div class="j-row">
+										<div class="span12 unit">
+												<div class="input">
+														<label class="icon-right" for="npi_type">
+																<i class="fa fa-location-arrow"></i>
+														</label>
+														<input type="text" placeholder="Group or Individual Name" id="group-name" name="group_name">
+												</div>
+										</div>
+									</div>
+								</fieldset>
+								<fieldset>
+									<div class="j-row">
+										<div class="span12 unit">
+												<div class="input">
+														<label class="icon-right" for="npi_type">
+																<i class="fa fa-location-arrow"></i>
+														</label>
+														<input type="text" placeholder="Group or Individual Name" id="group-name" name="group_name">
+												</div>
+										</div>
+									</div>
+								</fieldset>
+								<fieldset>
+									<div class="j-row">
+										<div class="span12 unit">
+												<div class="input">
+														<label class="icon-right" for="npi_type">
+																<i class="fa fa-location-arrow"></i>
+														</label>
+														<input type="text" placeholder="Group or Individual Name" id="group-name" name="group_name">
+												</div>
+										</div>
+									</div>
+								</fieldset>
             </div>
             <!-- end /.content -->
 
