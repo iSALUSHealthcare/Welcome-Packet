@@ -56,6 +56,42 @@
 	border-radius: 6px;
 }
 
+.j-forms .toclone.cloneya:not(:first-child){
+	border-top: 1px solid rgba(0,0,0,.12);
+	padding-top: 25px;
+
+}
+
+.j-forms input:disabled{
+	background-color: #0072cb;
+}
+
+.j-forms input:disabled::-webkit-input-placeholder{
+	color:white;
+}
+
+.j-forms input:disabled::-moz-placeholder{
+	color:white;
+}
+
+.j-forms input:disabled:-ms-input-placeholder{
+	color:white;
+}
+
+.j-forms input:disabled:-moz-placeholder{
+	color:white;
+}
+
+#schedule input{
+	border-radius: 0px;
+	border-width: 1px;
+
+}
+
+#schedule .unit{
+	padding: 0px;
+}
+
 /* Radio and checkbox
 =============================== */
 .j-forms.blue .checkbox:hover i,

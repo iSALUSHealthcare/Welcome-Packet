@@ -16,6 +16,7 @@
 		<script src="assets/js/jquery.1.11.1.min.js"></script>
 		<script src="assets/js/jquery.maskedinput.min.js"></script>
 		<script src="assets/js/j-forms-multistep.js"></script>
+		<script src="assets\js\jquery-cloneya.min.js"></script>
 
 		<!--[if lt IE 10]> <script src="assets/js/jquery.placeholder.min.js"></script> <![endif]-->
 
@@ -35,52 +36,68 @@
 					<!-- start steps -->
 					<div class="j-row">
 						<div class="span3 step">
-							<div class="steps">
-								<span>Step 1:</span>
-								<p>Company</p>
-							</div>
+							<a href="" class="step-link" data-step-number="1">
+								<div class="steps">
+									<span>Step 1:</span>
+									<p>Company</p>
+								</div>
+							</a>
 						</div>
 						<div class="span3 step">
-							<div class="steps">
-								<span>Step 2:</span>
-								<p>Billing</p>
-							</div>
+							<a href="" class="step-link" data-step-number="2">
+								<div class="steps">
+									<span>Step 2:</span>
+									<p>Billing</p>
+								</div>
+							</a>
 						</div>
 						<div class="span3 step">
-							<div class="steps">
-								<span>Step 3:</span>
-								<p>Providers</p>
-							</div>
+							<a href="" class="step-link" data-step-number="3">
+								<div class="steps">
+									<span>Step 3:</span>
+									<p>Providers</p>
+								</div>
+							</a>
 						</div>
 						<div class="span3 step">
-							<div class="steps">
-								<span>Step 4:</span>
-								<p>Users</p>
-							</div>
+							<a href="" class="step-link" data-step-number="4">
+								<div class="steps">
+									<span>Step 4:</span>
+									<p>Users</p>
+								</div>
+							</a>
 						</div>
 						<div class="span3 step">
-							<div class="steps">
-								<span>Step 5:</span>
-								<p>Locations</p>
-							</div>
+							<a href="" class="step-link" data-step-number="5">
+								<div class="steps">
+									<span>Step 5:</span>
+									<p>Locations</p>
+								</div>
+							</a>
 						</div>
 						<div class="span3 step">
-							<div class="steps">
-								<span>Step 6:</span>
-								<p>Payers</p>
-							</div>
+							<a href="" class="step-link" data-step-number="6">
+								<div class="steps">
+									<span>Step 6:</span>
+									<p>Payers</p>
+								</div>
+							</a>
 						</div>
 						<div class="span3 step">
-							<div class="steps">
-								<span>Step 7:</span>
-								<p>Additional Services</p>
-							</div>
+							<a href="" class="step-link" data-step-number="7">
+								<div class="steps">
+									<span>Step 7:</span>
+									<p>Additional Services</p>
+								</div>
+							</a>
 						</div>
 						<div class="span3 step">
-							<div class="steps">
-								<span>Step 8:</span>
-								<p>Documents</p>
-							</div>
+							<a href="" class="step-link" data-step-number="8">
+								<div class="steps">
+									<span>Step 8:</span>
+									<p>Documents</p>
+								</div>
+							</a>
 						</div>
 					</div>
 					<!-- end steps -->
@@ -313,6 +330,795 @@
 							<!-- end contact phone -->
 						</div>
 					</fieldset>
+					<!-- End Company Profile -->
+					<!-- Start Billing Section -->
+					<fieldset>
+						<div class="divider gap-bottom-25"></div>
+						<h3>Instructions</h3>
+						<p>Please fill out the following information about how your providers should be setup for 5010 billing. The Bill To Address must be a physical address.</p>
+						<p>The billing provider must be a provider of health care services and cannot be a billing service or clearinghouse. Physicians who want to have their payments sent to different address must use the pay-to address fields.</p>
+						<p class="note">*Note: If you have any questions about filling out this packet, please do not hesitate to ask.</p>
+						<div class="divider gap-bottom-25"></div>
+						<div class="j-row">
+							<h3>Bill To Address</h3>
+							<div class="span12 unit">
+								<div class="input">
+									<label class="icon-right" for="npi_type">
+										<i class="fa fa-location-arrow"></i>
+									</label>
+									<input type="text" placeholder="Group or Individual Name" id="group-name" name="group_name">
+								</div>
+							</div>
+						</div>
+						<div class="j-row">
+							<div class="span12 unit">
+								<div class="input">
+									<label class="icon-right" for="npi_type">
+										<i class="fa fa-location-arrow"></i>
+									</label>
+									<input type="text" placeholder="Mailing Address" id="mailing-address" name="mailing_address">
+								</div>
+							</div>
+						</div>
+						<div class="j-row">
+							<div class="span3 unit">
+								<div class="input">
+									<label class="icon-right" for="npi_type">
+										<i class="fa fa-location-arrow"></i>
+									</label>
+									<input type="text" placeholder="City" id="bill-to-city" name="bill_to_city">
+								</div>
+							</div>
+							<div class="span3 unit">
+								<div class="input">
+									<label class="icon-right" for="npi_type">
+										<i class="fa fa-location-arrow"></i>
+									</label>
+									<select>
+										<option value="AL">Alabama</option>
+										<option value="AK">Alaska</option>
+										<option value="AZ">Arizona</option>
+										<option value="AR">Arkansas</option>
+										<option value="CA">California</option>
+										<option value="CO">Colorado</option>
+										<option value="CT">Connecticut</option>
+										<option value="DE">Delaware</option>
+										<option value="DC">District Of Columbia</option>
+										<option value="FL">Florida</option>
+										<option value="GA">Georgia</option>
+										<option value="HI">Hawaii</option>
+										<option value="ID">Idaho</option>
+										<option value="IL">Illinois</option>
+										<option value="IN">Indiana</option>
+										<option value="IA">Iowa</option>
+										<option value="KS">Kansas</option>
+										<option value="KY">Kentucky</option>
+										<option value="LA">Louisiana</option>
+										<option value="ME">Maine</option>
+										<option value="MD">Maryland</option>
+										<option value="MA">Massachusetts</option>
+										<option value="MI">Michigan</option>
+										<option value="MN">Minnesota</option>
+										<option value="MS">Mississippi</option>
+										<option value="MO">Missouri</option>
+										<option value="MT">Montana</option>
+										<option value="NE">Nebraska</option>
+										<option value="NV">Nevada</option>
+										<option value="NH">New Hampshire</option>
+										<option value="NJ">New Jersey</option>
+										<option value="NM">New Mexico</option>
+										<option value="NY">New York</option>
+										<option value="NC">North Carolina</option>
+										<option value="ND">North Dakota</option>
+										<option value="OH">Ohio</option>
+										<option value="OK">Oklahoma</option>
+										<option value="OR">Oregon</option>
+										<option value="PA">Pennsylvania</option>
+										<option value="RI">Rhode Island</option>
+										<option value="SC">South Carolina</option>
+										<option value="SD">South Dakota</option>
+										<option value="TN">Tennessee</option>
+										<option value="TX">Texas</option>
+										<option value="UT">Utah</option>
+										<option value="VT">Vermont</option>
+										<option value="VA">Virginia</option>
+										<option value="WA">Washington</option>
+										<option value="WV">West Virginia</option>
+										<option value="WI">Wisconsin</option>
+										<option value="WY">Wyoming</option>
+									</select>
+								</div>
+							</div>
+							<div class="span3 unit">
+								<div class="input">
+									<label class="icon-right" for="npi_type">
+										<i class="fa fa-location-arrow"></i>
+									</label>
+									<input type="text" placeholder="Zip Code" id="bill-to-zip" name="bill_to_zip">
+								</div>
+							</div>
+							<div class="span3 unit">
+								<div class="input">
+									<label class="icon-right" for="npi_type">
+										<i class="fa fa-location-arrow"></i>
+									</label>
+									<input type="text" placeholder="Phone" id="bill-to-phone" name="bill_to_phone">
+								</div>
+							</div>
+						</div>
+						<div class="divider gap-bottom-25"></div>
+						<div class="j-row">
+							<h3>Pay To Address (PO Box Only)</h3>
+							<div class="span12 unit">
+								<div class="input">
+									<label class="icon-right" for="npi_type">
+										<i class="fa fa-location-arrow"></i>
+									</label>
+									<input type="text" placeholder="Group or Individual Name" id="pay-to-group-name" name="pay_to_group_name">
+								</div>
+							</div>
+						</div>
+						<div class="j-row">
+							<div class="span12 unit">
+								<div class="input">
+									<label class="icon-right" for="npi_type">
+										<i class="fa fa-location-arrow"></i>
+									</label>
+									<input type="text" placeholder="Mailing Address" id="pay-to-mailing-address" name="pay_to_mailing_address">
+								</div>
+							</div>
+						</div>
+						<div class="j-row">
+							<div class="span3 unit">
+								<div class="input">
+									<label class="icon-right" for="npi_type">
+										<i class="fa fa-location-arrow"></i>
+									</label>
+									<input type="text" placeholder="City" id="pay-to-city" name="pay_to_city">
+								</div>
+							</div>
+							<div class="span3 unit">
+								<div class="input">
+									<label class="icon-right" for="npi_type">
+										<i class="fa fa-location-arrow"></i>
+									</label>
+									<select>
+										<option value="AL">Alabama</option>
+										<option value="AK">Alaska</option>
+										<option value="AZ">Arizona</option>
+										<option value="AR">Arkansas</option>
+										<option value="CA">California</option>
+										<option value="CO">Colorado</option>
+										<option value="CT">Connecticut</option>
+										<option value="DE">Delaware</option>
+										<option value="DC">District Of Columbia</option>
+										<option value="FL">Florida</option>
+										<option value="GA">Georgia</option>
+										<option value="HI">Hawaii</option>
+										<option value="ID">Idaho</option>
+										<option value="IL">Illinois</option>
+										<option value="IN">Indiana</option>
+										<option value="IA">Iowa</option>
+										<option value="KS">Kansas</option>
+										<option value="KY">Kentucky</option>
+										<option value="LA">Louisiana</option>
+										<option value="ME">Maine</option>
+										<option value="MD">Maryland</option>
+										<option value="MA">Massachusetts</option>
+										<option value="MI">Michigan</option>
+										<option value="MN">Minnesota</option>
+										<option value="MS">Mississippi</option>
+										<option value="MO">Missouri</option>
+										<option value="MT">Montana</option>
+										<option value="NE">Nebraska</option>
+										<option value="NV">Nevada</option>
+										<option value="NH">New Hampshire</option>
+										<option value="NJ">New Jersey</option>
+										<option value="NM">New Mexico</option>
+										<option value="NY">New York</option>
+										<option value="NC">North Carolina</option>
+										<option value="ND">North Dakota</option>
+										<option value="OH">Ohio</option>
+										<option value="OK">Oklahoma</option>
+										<option value="OR">Oregon</option>
+										<option value="PA">Pennsylvania</option>
+										<option value="RI">Rhode Island</option>
+										<option value="SC">South Carolina</option>
+										<option value="SD">South Dakota</option>
+										<option value="TN">Tennessee</option>
+										<option value="TX">Texas</option>
+										<option value="UT">Utah</option>
+										<option value="VT">Vermont</option>
+										<option value="VA">Virginia</option>
+										<option value="WA">Washington</option>
+										<option value="WV">West Virginia</option>
+										<option value="WI">Wisconsin</option>
+										<option value="WY">Wyoming</option>
+									</select>
+								</div>
+							</div>
+							<div class="span3 unit">
+								<div class="input">
+									<label class="icon-right" for="npi_type">
+										<i class="fa fa-location-arrow"></i>
+									</label>
+									<input type="text" placeholder="Zip Code" id="pay-to-zip" name="pay_to_zip">
+								</div>
+							</div>
+							<div class="span3 unit">
+								<div class="input">
+									<label class="icon-right" for="npi_type">
+										<i class="fa fa-location-arrow"></i>
+									</label>
+									<input type="text" placeholder="Phone" id="pay-to-phone" name="pay_to_phone">
+								</div>
+							</div>
+						</div>
+					</fieldset>
+					<!-- End Billing Section -->
+					<!-- Start Providers -->
+					<fieldset>
+						<div class="divider gap-bottom-25"></div>
+						<h3>Instructions</h3>
+						<p>Please provide the following information for each rendering provider.</p>
+						<div class="divider gap-bottom-25"></div>
+						<div class="j-row">
+							<div class="span4 unit">
+								<div class="input">
+									<input type="text" placeholder="First Name">
+								</div>
+							</div>
+							<div class="span2 unit">
+								<div class="input">
+									<input type="text" placeholder="Middle">
+								</div>
+							</div>
+							<div class="span4 unit">
+								<div class="input">
+									<input type="email" placeholder="Last Name">
+								</div>
+							</div>
+							<div class="span2 unit">
+								<div class="input">
+									<input type="email" placeholder="Suffix">
+								</div>
+							</div>
+						</div>
+						<div class="j-row">
+							<div class="span3 unit">
+								<div class="input">
+									<input type="text" placeholder="Specialty or Taxonomy">
+								</div>
+							</div>
+							<div class="span3 unit">
+								<div class="input">
+									<input type="text" placeholder="NPI" id="provider-npi">
+								</div>
+							</div>
+							<div class="span3 unit">
+								<div class="input">
+									<input type="text" placeholder="DEA" id="provider-dea">
+								</div>
+							</div>
+							<div class="span3 unit">
+								<div class="input">
+									<input type="text" placeholder="State License #" id="provider-state-license">
+								</div>
+							</div>
+						</div>
+						<div class="j-row">
+							<div class="span3 unit">
+								<div class="input">
+									<input type="text" placeholder="Medicaid Number" id="provider-medicaid-number">
+								</div>
+							</div>
+							<div class="span3 unit">
+								<div class="input">
+									<input type="text" placeholder="Medicaid PTAN" id="provider-medicare-ptan">
+								</div>
+							</div>
+							<div class="span3 unit">
+								<div class="input">
+									<input type="text" placeholder="RR Medicare PTAN" id="provider-rr-medicare-ptan">
+								</div>
+							</div>
+							<div class="span3 unit">
+								<div class="input">
+									<input type="text" placeholder="PIN" id="provider-pin">
+								</div>
+							</div>
+						</div>
+						<div class="j-row">
+							<div class="span12 unit">
+								<div class="input">
+									<input type="text" placeholder="Rendering Address">
+								</div>
+							</div>
+						</div>
+						<div class="j-row">
+							<div class="span4 unit">
+								<div class="input">
+									<input type="text" placeholder="City">
+								</div>
+							</div>
+							<div class="span4 unit">
+								<div class="input">
+									<select>
+										<option value="AL">Alabama</option>
+										<option value="AK">Alaska</option>
+										<option value="AZ">Arizona</option>
+										<option value="AR">Arkansas</option>
+										<option value="CA">California</option>
+										<option value="CO">Colorado</option>
+										<option value="CT">Connecticut</option>
+										<option value="DE">Delaware</option>
+										<option value="DC">District Of Columbia</option>
+										<option value="FL">Florida</option>
+										<option value="GA">Georgia</option>
+										<option value="HI">Hawaii</option>
+										<option value="ID">Idaho</option>
+										<option value="IL">Illinois</option>
+										<option value="IN">Indiana</option>
+										<option value="IA">Iowa</option>
+										<option value="KS">Kansas</option>
+										<option value="KY">Kentucky</option>
+										<option value="LA">Louisiana</option>
+										<option value="ME">Maine</option>
+										<option value="MD">Maryland</option>
+										<option value="MA">Massachusetts</option>
+										<option value="MI">Michigan</option>
+										<option value="MN">Minnesota</option>
+										<option value="MS">Mississippi</option>
+										<option value="MO">Missouri</option>
+										<option value="MT">Montana</option>
+										<option value="NE">Nebraska</option>
+										<option value="NV">Nevada</option>
+										<option value="NH">New Hampshire</option>
+										<option value="NJ">New Jersey</option>
+										<option value="NM">New Mexico</option>
+										<option value="NY">New York</option>
+										<option value="NC">North Carolina</option>
+										<option value="ND">North Dakota</option>
+										<option value="OH">Ohio</option>
+										<option value="OK">Oklahoma</option>
+										<option value="OR">Oregon</option>
+										<option value="PA">Pennsylvania</option>
+										<option value="RI">Rhode Island</option>
+										<option value="SC">South Carolina</option>
+										<option value="SD">South Dakota</option>
+										<option value="TN">Tennessee</option>
+										<option value="TX">Texas</option>
+										<option value="UT">Utah</option>
+										<option value="VT">Vermont</option>
+										<option value="VA">Virginia</option>
+										<option value="WA">Washington</option>
+										<option value="WV">West Virginia</option>
+										<option value="WI">Wisconsin</option>
+										<option value="WY">Wyoming</option>
+									</select>
+								</div>
+							</div>
+							<div class="span4 unit">
+								<div class="input">
+									<input type="email" placeholder="Zip">
+								</div>
+							</div>
+
+						</div>
+						<div class="j-row">
+							<div class="span6 unit">
+								<input type="text" placeholder="Practice Phone" id="provider-practice-phone">
+							</div>
+							<div class="span6 unit">
+								<input type="text" placeholder="Practice Fax" id="provider-practice-fax">
+							</div>
+						</div>
+						<div class="j-row">
+							<div class="span4 unit">
+								<select>
+									<option value="" disabled selected>Meaningful Use</option>
+									<option>Yes</option>
+									<option>No</option>
+
+								</select>
+							</div>
+							<div class="span4 unit">
+								<select>
+									<option value="" disabled selected>Medicare or Medicaid</option>
+									<option>Medicare</option>
+									<option>Medicaid</option>
+								</select>
+							</div>
+							<div class="span4 unit">
+								<select>
+									<option value="" disabled selected>Stage</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+								</select>
+							</div>
+						</div>
+						<div class="j-row">
+							<div class="span4 unit">
+								<input type="checkbox" name="vehicle" value="Bike">I Would like to stay up to date with CMS News
+							</div>
+						</div>
+						<div class="divider gap-bottom-25"></div>
+						<h3>Provider Schedule</h3>
+						<p>Please add the schedule information for each resource. A resource is how iSalus ties a schedule to a specific provider. If a resource has different schedules based on the week, please add a line for each week’s schedule. Also, if a day may have
+							variable times, please list the earliest start and latest end time you would like for the schedule to show.</p>
+						<div class="divider gap-bottom-25"></div>
+						<div id="schedule">
+							<div class="j-row">
+								<div class="span2 unit"><input type="text" placeholder="Resource" disabled></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text" placeholder="Sunday" disabled></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text" placeholder="Monday" disabled></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text" placeholder="Tuesday" disabled></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text" placeholder="Wednesday" disabled></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text" placeholder="Thursday" disabled></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text" placeholder="Friday" disabled></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text" placeholder="Staurday" disabled></div>
+
+							</div>
+							<div class="j-row">
+								<div class="span2 unit"><input type="text" placeholder="Hours" disabled></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text" placeholder="9am - 5pm"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+
+							</div>
+							<div class="j-row">
+								<div class="span2 unit"><input type="text" placeholder="Location" disabled></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text" placeholder="North Clinic"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+
+							</div>
+							<div class="j-row">
+								<div class="span2 unit"><input type="text" placeholder="Lunch" disabled></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text" placeholder="12pm - 1pm"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+
+							</div>
+							<div class="j-row">
+								<div class="span2 unit"><input type="text" placeholder="Recurring Meeting" disabled></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text" placeholder="3pm - 4pm"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+
+							</div>
+							<div class="j-row">
+								<div class="span2 unit"><input type="text" placeholder="Comments" disabled></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text" placeholder="Meeting Bi-Weekly"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+								<div style="width: 11.90%" class="span1 unit"><input type="text"></div>
+
+							</div>
+						</div>
+						<!-- end /.toclone -->
+					</fieldset>
+					<!-- End Providers -->
+					<!-- Start Users -->
+					<fieldset>
+
+						<div id="animate-clone-users" class="clone-users">
+							<div class="toclone cloneya">
+								<a href="#" class="link clone">Add Another User</a>
+								<a href="#" class="link delete">Delete User</a>
+								<div class="j-row">
+									<div style="width: 12.5%" class="span1 unit">
+										<div class="input">
+											<input type="text" placeholder="First Name" name="group_name">
+										</div>
+									</div>
+									<div style="width: 12.5%" class="span1 unit">
+										<div class="input">
+											<input type="text" placeholder="Last Name" name="group_name">
+										</div>
+									</div>
+									<div style="width: 12.5%" class="span1 unit">
+										<div class="input">
+											<input type="email" placeholder="Email" name="group_name">
+										</div>
+									</div>
+									<div style="width: 12.5%" class="span1 unit">
+										<label class="checkbox">
+											<input type="checkbox">
+											<i></i>
+											Admin
+										</label>
+									</div>
+									<div style="width: 12.5%" class="span1 unit">
+										<label class="checkbox">
+											<input type="checkbox">
+											<i></i>
+											Ancillary
+										</label>
+									</div>
+									<div style="width: 12.5%" class="span1 unit">
+										<label class="checkbox">
+											<input type="checkbox">
+											<i></i>
+											Billing
+										</label>
+									</div>
+									<div style="width: 12.5%" class="span1 unit">
+										<label class="checkbox">
+											<input type="checkbox">
+											<i></i>
+											Front Office
+										</label>
+									</div>
+									<div style="width: 12.5%" class="span1 unit">
+										<label class="checkbox">
+											<input type="checkbox">
+											<i></i>
+											Provider
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+					<!-- End Users -->
+					<!-- Start Locations -->
+					<fieldset>
+						<div class="divider gap-bottom-25"></div>
+						<h3>Instructions</h3>
+						<p>Please fill out the following information for all service locations (clinics, hospitals,off-site,etc.) associated with appointments and claims.</p>
+						<div class="divider gap-bottom-25"></div>
+						<div id="animate-clone-locations" class="clone-locations">
+							<div class="toclone cloneya">
+								<a href="#" class="link clone">Add Another Location</a>
+								<a href="#" class="link delete">Delete Location</a>
+								<div class="j-row">
+									<div class="span12 unit">
+										<div class="input">
+											<input type="text" placeholder="Name" name="group_name">
+										</div>
+									</div>
+								</div>
+								<div class="j-row">
+									<div class="span4 unit">
+										<div class="input">
+											<label class="icon-right" for="npi_type">
+												<i class="fa fa-sort-down"></i>
+											</label>
+											<select>
+												<option value="" disabled selected>POS</option>
+												<option value="AL">Alabama</option>
+												<option value="AK">Alaska</option>
+												<option value="AZ">Arizona</option>
+												<option value="AR">Arkansas</option>
+												<option value="CA">California</option>
+												<option value="CO">Colorado</option>
+												<option value="CT">Connecticut</option>
+												<option value="DE">Delaware</option>
+												<option value="DC">District Of Columbia</option>
+												<option value="FL">Florida</option>
+												<option value="GA">Georgia</option>
+												<option value="HI">Hawaii</option>
+												<option value="ID">Idaho</option>
+												<option value="IL">Illinois</option>
+												<option value="IN">Indiana</option>
+												<option value="IA">Iowa</option>
+												<option value="KS">Kansas</option>
+												<option value="KY">Kentucky</option>
+												<option value="LA">Louisiana</option>
+												<option value="ME">Maine</option>
+												<option value="MD">Maryland</option>
+												<option value="MA">Massachusetts</option>
+												<option value="MI">Michigan</option>
+												<option value="MN">Minnesota</option>
+												<option value="MS">Mississippi</option>
+												<option value="MO">Missouri</option>
+												<option value="MT">Montana</option>
+												<option value="NE">Nebraska</option>
+												<option value="NV">Nevada</option>
+												<option value="NH">New Hampshire</option>
+												<option value="NJ">New Jersey</option>
+												<option value="NM">New Mexico</option>
+												<option value="NY">New York</option>
+												<option value="NC">North Carolina</option>
+												<option value="ND">North Dakota</option>
+												<option value="OH">Ohio</option>
+												<option value="OK">Oklahoma</option>
+												<option value="OR">Oregon</option>
+												<option value="PA">Pennsylvania</option>
+												<option value="RI">Rhode Island</option>
+												<option value="SC">South Carolina</option>
+												<option value="SD">South Dakota</option>
+												<option value="TN">Tennessee</option>
+												<option value="TX">Texas</option>
+												<option value="UT">Utah</option>
+												<option value="VT">Vermont</option>
+												<option value="VA">Virginia</option>
+												<option value="WA">Washington</option>
+												<option value="WV">West Virginia</option>
+												<option value="WI">Wisconsin</option>
+												<option value="WY">Wyoming</option>
+											</select>
+										</div>
+									</div>
+									<div class="span4 unit">
+										<div class="input">
+											<input type="email" placeholder="Phone" name="group_name" id="location-phone">
+										</div>
+									</div>
+									<div class="span4 unit">
+										<div class="input">
+											<input type="text" placeholder="Fax" name="group_name" id="location-fax">
+										</div>
+									</div>
+								</div>
+								<div class="j-row">
+									<div class="span12 unit">
+										<div class="input">
+											<input type="text" placeholder="Address" name="group_name">
+										</div>
+									</div>
+								</div>
+								<div class="j-row">
+									<div class="span4 unit">
+										<div class="input">
+											<input type="text" placeholder="City" name="group_name">
+										</div>
+									</div>
+									<div class="span4 unit">
+										<div class="input">
+											<label class="icon-right" for="npi_type">
+												<i class="fa fa-sort-down"></i>
+											</label>
+											<select>
+												<option value="" disabled selected>State</option>
+												<option value="AL">Alabama</option>
+												<option value="AK">Alaska</option>
+												<option value="AZ">Arizona</option>
+												<option value="AR">Arkansas</option>
+												<option value="CA">California</option>
+												<option value="CO">Colorado</option>
+												<option value="CT">Connecticut</option>
+												<option value="DE">Delaware</option>
+												<option value="DC">District Of Columbia</option>
+												<option value="FL">Florida</option>
+												<option value="GA">Georgia</option>
+												<option value="HI">Hawaii</option>
+												<option value="ID">Idaho</option>
+												<option value="IL">Illinois</option>
+												<option value="IN">Indiana</option>
+												<option value="IA">Iowa</option>
+												<option value="KS">Kansas</option>
+												<option value="KY">Kentucky</option>
+												<option value="LA">Louisiana</option>
+												<option value="ME">Maine</option>
+												<option value="MD">Maryland</option>
+												<option value="MA">Massachusetts</option>
+												<option value="MI">Michigan</option>
+												<option value="MN">Minnesota</option>
+												<option value="MS">Mississippi</option>
+												<option value="MO">Missouri</option>
+												<option value="MT">Montana</option>
+												<option value="NE">Nebraska</option>
+												<option value="NV">Nevada</option>
+												<option value="NH">New Hampshire</option>
+												<option value="NJ">New Jersey</option>
+												<option value="NM">New Mexico</option>
+												<option value="NY">New York</option>
+												<option value="NC">North Carolina</option>
+												<option value="ND">North Dakota</option>
+												<option value="OH">Ohio</option>
+												<option value="OK">Oklahoma</option>
+												<option value="OR">Oregon</option>
+												<option value="PA">Pennsylvania</option>
+												<option value="RI">Rhode Island</option>
+												<option value="SC">South Carolina</option>
+												<option value="SD">South Dakota</option>
+												<option value="TN">Tennessee</option>
+												<option value="TX">Texas</option>
+												<option value="UT">Utah</option>
+												<option value="VT">Vermont</option>
+												<option value="VA">Virginia</option>
+												<option value="WA">Washington</option>
+												<option value="WV">West Virginia</option>
+												<option value="WI">Wisconsin</option>
+												<option value="WY">Wyoming</option>
+											</select>
+										</div>
+									</div>
+									<div class="span4 unit">
+										<div class="input">
+											<input type="text" placeholder="Zip" name="group_name">
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</fieldset>
+					<!-- End Locations -->
+					<!-- Start Payers -->
+					<fieldset>
+						<div class="divider gap-bottom-25"></div>
+						<h3>Instructions</h3>
+						<p>Please fill out the following information for the practice’s most common payers. The address column should be the address where claims are sent. Place a ‘Y’ in the eClaims column if you plan to send claims electronically for this payer. Place a
+							‘Y’ in the ERA columns if you would like to receive electronic EOB’s.</p>
+						<div class="divider gap-bottom-25"></div>
+						<div id="animate-clone-payers" class="clone-payers">
+							<div class="toclone cloneya">
+								<a href="#" class="link clone">Add Another Payer</a>
+								<a href="#" class="link delete">Delete Payer</a>
+								<div class="j-row">
+									<div class="span12 unit">
+										<div class="input">
+											<input type="text" placeholder="Payer Name" name="group_name">
+										</div>
+									</div>
+								</div>
+								<div class="j-row">
+									<div class="span12 unit">
+										<div class="input">
+											<input type="text" placeholder="Address" name="group_name">
+										</div>
+									</div>
+								</div>
+								<div class="j-row">
+									<div class="span4 unit">
+										<div class="input">
+											<input type="email" placeholder="Payer ID" name="group_name" id="location-phone">
+
+										</div>
+									</div>
+									<div class="span4 unit">
+										<div class="input">
+											<label class="icon-right" for="npi_type">
+												<i class="fa fa-sort-down"></i>
+											</label>
+											<select>
+												<option value="" selected disabled>eClaims</option>
+												<option>Yes</option>
+												<option>No</option>
+											</select>
+										</div>
+									</div>
+									<div class="span4 unit">
+										<div class="input">
+											<label class="icon-right" for="npi_type">
+												<i class="fa fa-sort-down"></i>
+											</label>
+											<select>
+												<option value="" selected disabled>ERA</option>
+												<option>Yes</option>
+												<option>No</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+					<!-- End Payers -->
+					<!-- Start Additional Services -->
 					<fieldset>
 						<div class="j-row">
 							<div class="span12 unit">
@@ -325,6 +1131,8 @@
 							</div>
 						</div>
 					</fieldset>
+					<!-- End Additional Services -->
+					<!-- Start Documents -->
 					<fieldset>
 						<div class="j-row">
 							<div class="span12 unit">
@@ -337,66 +1145,7 @@
 							</div>
 						</div>
 					</fieldset>
-					<fieldset>
-						<div class="j-row">
-							<div class="span12 unit">
-								<div class="input">
-									<label class="icon-right" for="npi_type">
-										<i class="fa fa-location-arrow"></i>
-									</label>
-									<input type="text" placeholder="Group or Individual Name" id="group-name" name="group_name">
-								</div>
-							</div>
-						</div>
-					</fieldset>
-					<fieldset>
-						<div class="j-row">
-							<div class="span12 unit">
-								<div class="input">
-									<label class="icon-right" for="npi_type">
-										<i class="fa fa-location-arrow"></i>
-									</label>
-									<input type="text" placeholder="Group or Individual Name" id="group-name" name="group_name">
-								</div>
-							</div>
-						</div>
-					</fieldset>
-					<fieldset>
-						<div class="j-row">
-							<div class="span12 unit">
-								<div class="input">
-									<label class="icon-right" for="npi_type">
-										<i class="fa fa-location-arrow"></i>
-									</label>
-									<input type="text" placeholder="Group or Individual Name" id="group-name" name="group_name">
-								</div>
-							</div>
-						</div>
-					</fieldset>
-					<fieldset>
-						<div class="j-row">
-							<div class="span12 unit">
-								<div class="input">
-									<label class="icon-right" for="npi_type">
-										<i class="fa fa-location-arrow"></i>
-									</label>
-									<input type="text" placeholder="Group or Individual Name" id="group-name" name="group_name">
-								</div>
-							</div>
-						</div>
-					</fieldset>
-					<fieldset>
-						<div class="j-row">
-							<div class="span12 unit">
-								<div class="input">
-									<label class="icon-right" for="npi_type">
-										<i class="fa fa-location-arrow"></i>
-									</label>
-									<input type="text" placeholder="Group or Individual Name" id="group-name" name="group_name">
-								</div>
-							</div>
-						</div>
-					</fieldset>
+					<!-- End Documents -->
 
 					<!-- end files -->
 
@@ -416,11 +1165,101 @@
 			</form>
 		</div>
 		<script>
+
 			$("#practice-phone").mask('(999) 999-9999', {placeholder: 'x'});
 			$("#practice-fax").mask('(999) 999-9999', {placeholder: 'x'});
 			$("#contact-phone").mask('(999) 999-9999', {placeholder: 'x'});
+			$("#bill-to-phone").mask('(999) 999-9999', {placeholder: 'x'});
+			$("#pay-to-phone").mask('(999) 999-9999', {placeholder: 'x'});
+			$("#provider-practice-phone").mask('(999) 999-9999', {placeholder: 'x'});
+			$("#provider-practice-fax").mask('(999) 999-9999', {placeholder: 'x'});
+			$("#location-fax").mask('(999) 999-9999', {placeholder: 'x'});
+			$("#location-phone").mask('(999) 999-9999', {placeholder: 'x'});
 			$("#tax-id").mask('99-999999', {placeholder: 'x'});
 			$("#practice-npi").mask('9999999999', {placeholder: 'x'});
+			$("#provider-npi").mask('9999999999', {placeholder: 'x'});
+			$("#provider-dea").mask('9999999', {placeholder: 'x'});
+			$("#provider-state-license").mask('999999', {placeholder: 'x'});
+			$("#provider-medicaid-number").mask('9999999', {placeholder: 'x'});
+			$("#provider-medicare-ptan").mask('9999999', {placeholder: 'x'});
+			$("#provider-rr-medicare-ptan").mask('9999999', {placeholder: 'x'});
+			$("#provider-pin").mask('9999', {placeholder: 'x'});
+
+			$('.clone-users').cloneya();
+			$('.clone-locations').cloneya();
+			$('.clone-payers').cloneya();
+			$('#animate-clone-users').cloneya().on('before_clone.cloneya', function (event, toclone) {
+				// do something
+			}).on('after_clone.cloneya', function (event, toclone, newclone) {
+				// do something
+			}).on('before_append.cloneya', function (event, toclone, newclone) {
+				$(newclone).css('display', 'none');
+				$(toclone).fadeOut('fast', function () {
+					$(this).fadeIn('fast');
+				});
+			}).on('after_append.cloneya', function (event, toclone, newclone) {
+				$(newclone).slideToggle();
+				console.log('finished cloning ' + toclone.attr('id') + ' to ' + newclone.attr('id'));
+			}).off('remove.cloneya').on('remove.cloneya', function (event, clone) {
+				clone.css('background-color', 'red');
+
+				$(clone).slideToggle('slow', function () {
+					$(clone).remove();
+				});
+
+			}).on('after_delete.cloneya', function () {
+				console.log('deleted');
+			});
+
+			$('#animate-clone-locations').cloneya().on('before_clone.cloneya', function (event, toclone) {
+				// do something
+			}).on('after_clone.cloneya', function (event, toclone, newclone) {
+				// do something
+			}).on('before_append.cloneya', function (event, toclone, newclone) {
+				$(newclone).css('display', 'none');
+				$(toclone).fadeOut('fast', function () {
+					$(this).fadeIn('fast');
+				});
+			}).on('after_append.cloneya', function (event, toclone, newclone) {
+				$(newclone).slideToggle();
+				console.log('finished cloning ' + toclone.attr('id') + ' to ' + newclone.attr('id'));
+			}).off('remove.cloneya').on('remove.cloneya', function (event, clone) {
+				clone.css('background-color', 'red');
+
+				$(clone).slideToggle('slow', function () {
+					$(clone).remove();
+				});
+
+			}).on('after_delete.cloneya', function () {
+				console.log('deleted');
+			});
+
+			$('#animate-clone-payers').cloneya().on('before_clone.cloneya', function (event, toclone) {
+				// do something
+			}).on('after_clone.cloneya', function (event, toclone, newclone) {
+				// do something
+			}).on('before_append.cloneya', function (event, toclone, newclone) {
+				$(newclone).css('display', 'none');
+				$(toclone).fadeOut('fast', function () {
+					$(this).fadeIn('fast');
+				});
+			}).on('after_append.cloneya', function (event, toclone, newclone) {
+				$(newclone).slideToggle();
+				console.log('finished cloning ' + toclone.attr('id') + ' to ' + newclone.attr('id'));
+			}).off('remove.cloneya').on('remove.cloneya', function (event, clone) {
+				clone.css('background-color', 'red');
+
+				$(clone).slideToggle('slow', function () {
+					$(clone).remove();
+				});
+
+			}).on('after_delete.cloneya', function () {
+				console.log('deleted');
+			});
 		</script>
 	</body>
+</html>
+
+</html>
+
 </html>
