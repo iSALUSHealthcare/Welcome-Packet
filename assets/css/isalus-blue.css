@@ -92,6 +92,10 @@
 	padding: 0px;
 }
 
+.j-forms p.lead{
+	font-size: 14px;
+	line-height: 2em;
+}
 /* Radio and checkbox
 =============================== */
 .j-forms.blue .checkbox:hover i,

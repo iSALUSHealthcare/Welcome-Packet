@@ -79,6 +79,14 @@
 							<a href="" class="step-link" data-step-number="6">
 								<div class="steps">
 									<span>Step 6:</span>
+									<p>Appointment Types</p>
+								</div>
+							</a>
+						</div>
+						<div class="span3 step">
+							<a href="" class="step-link" data-step-number="6">
+								<div class="steps">
+									<span>Step 7:</span>
 									<p>Payers</p>
 								</div>
 							</a>
@@ -86,7 +94,7 @@
 						<div class="span3 step">
 							<a href="" class="step-link" data-step-number="7">
 								<div class="steps">
-									<span>Step 7:</span>
+									<span>Step 8:</span>
 									<p>Additional Services</p>
 								</div>
 							</a>
@@ -94,7 +102,7 @@
 						<div class="span3 step">
 							<a href="" class="step-link" data-step-number="8">
 								<div class="steps">
-									<span>Step 8:</span>
+									<span>Step 9:</span>
 									<p>Documents</p>
 								</div>
 							</a>
@@ -1078,6 +1086,40 @@
 						</div>
 					</fieldset>
 					<!-- End Locations -->
+					<!-- start appointment types -->
+					<fieldset>
+						<div id="animate-clone-appts" class="clone-appts">
+							<div class="toclone cloneya">
+								<a href="#" class="link clone">Add Another Appointment Type</a>
+								<a href="#" class="link delete">Delete Appointment Type</a>
+								<div class="j-row">
+									<div class="span4 unit">
+										<div class="input">
+											<input type="text" placeholder="Appointment Type" name="appointment_type">
+										</div>
+									</div>
+									<div class="span4 unit">
+										<div class="input">
+											<input type="text" placeholder="Duration (mins)" name="appointment_duration">
+										</div>
+									</div>
+									<div class="span3 unit">
+										<div class="input">
+											<input type="text" placeholder="Assosicated Resource/s" name="appointment_resource">
+										</div>
+									</div>
+									<div class="span1 unit">
+										<label class="checkbox">
+											<input value="all" type="checkbox" name="appointment_resource_all">
+											<i></i>
+											All
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+					<!-- end appointment types -->
 					<!-- Start Payers -->
 					<fieldset>
 						<div class="divider gap-bottom-25"></div>
@@ -1152,13 +1194,22 @@
 					<fieldset>
 						<div class="j-row">
 							<div class="span4 unit">
-								<a class="primary-btn">Appointment Reminders</a>
+								<h2>Automated Appointment Reminders</h2>
+								<p class="lead">Now you can increase your practice's revenues and improve patient attendance rates by sending email, text and phone call appointment reminders to your patients. It's simple. For just $0.10 each, you can now efficiently and effectively
+									send friendly reminders to your patients. There are no setup fees, no long-term contracts or cancellation penalties. Simply pay as you go for whatever you use.</p>
+								<button style="float:left; margin-left: 0px;" class="primary-btn left">Sign Up</button>
 							</div>
 							<div class="span4 unit">
-								<a class="primary-btn">Appointment Reminders</a>
+								<h2>Electronic Statements</h2>
+								<p class="lead">Now you can increase your practice's revenues and improve patient attendance rates by sending email, text and phone call appointment reminders to your patients. It's simple. For just $0.10 each, you can now efficiently and effectively
+									send friendly reminders to your patients. There are no setup fees, no long-term contracts or cancellation penalties. Simply pay as you go for whatever you use.</p>
+								<button style="float:left; margin-left: 0px;" class="primary-btn">Sign Up</button>
 							</div>
 							<div class="span4 unit">
-								<a class="primary-btn">Appointment Reminders</a>
+								<h2>Integrated Faxing</h2>
+								<p class="lead">iSalus offers you the ability to electronically integrate faxes directly into your EMR. In the effort to help your office go paperless and run more efficiently, we would like to assist you in setting up this amazing service.
+									Essentially, you have the ability to allow both inbound and/ or outbound faxes to be delivered electronically to your office. iSalus has teamed up with the nationally recognized company j2 / MyFax Corporate to provide this service.</p>
+								<button style="float:left; margin-left: 0px;" class="primary-btn">Sign Up</button>
 							</div>
 						</div>
 					</fieldset>
@@ -1179,7 +1230,6 @@
 										<input type="file" name="fee_schedule" onchange="document.getElementById('fee_schedule_input').value = this.value;">
 									</div>
 									<input type="text" id="fee_schedule_input" readonly="" placeholder="Fee Schedule">
-									<span class="hint">Only: doc / docx / xls /xlsx, less 1Mb</span>
 								</label>
 							</div>
 							<!-- end upload fee schedule -->
@@ -1191,7 +1241,6 @@
 										<input type="file" name="superbill" onchange="document.getElementById('superbill_input').value = this.value;">
 									</div>
 									<input type="text" id="superbill_input" readonly="" placeholder="Superbill">
-									<span class="hint">Only: doc / docx / xls /xlsx, less 1Mb</span>
 								</label>
 							</div>
 							<!-- end upload superbill -->
@@ -1207,7 +1256,6 @@
 										<input type="file" name="practice_logo" onchange="document.getElementById('practice_logo_input').value = this.value;">
 									</div>
 									<input type="text" id="practice_logo_input" readonly="" placeholder="Practice Logo">
-									<span class="hint">Only: doc / docx / xls /xlsx, less 1Mb</span>
 								</label>
 							</div>
 							<!-- end upload practice logo -->
@@ -1219,7 +1267,6 @@
 										<input type="file" name="letterhead" onchange="document.getElementById('letterhead_input').value = this.value;">
 									</div>
 									<input type="text" id="letterhead_input" readonly="" placeholder="Letterhead">
-									<span class="hint">Only: doc / docx / xls /xlsx, less 1Mb</span>
 								</label>
 							</div>
 							<!-- end upload letterhead -->
@@ -1233,7 +1280,6 @@
 										<input type="file" name="templates" onchange="document.getElementById('templates_input').value = this.value;">
 									</div>
 									<input type="text" id="templates_input" readonly="" placeholder="Templates">
-									<span class="hint">Only: doc / docx / xls /xlsx, less 1Mb</span>
 								</label>
 							</div>
 							<!-- end upload templates -->
@@ -1245,7 +1291,6 @@
 										<input type="file" name="other" onchange="document.getElementById('other_input').value = this.value;">
 									</div>
 									<input type="text" id="other_input" readonly="" placeholder="Other">
-									<span class="hint">Only: doc / docx / xls /xlsx, less 1Mb</span>
 								</label>
 							</div>
 							<!-- end upload other -->
@@ -1292,6 +1337,7 @@
 			$('.clone-users').cloneya();
 			$('.clone-locations').cloneya();
 			$('.clone-payers').cloneya();
+			$('.clone-appts').cloneya();
 			$('#animate-clone-users').cloneya().on('before_clone.cloneya', function (event, toclone) {
 				// do something
 			}).on('after_clone.cloneya', function (event, toclone, newclone) {
@@ -1316,6 +1362,28 @@
 			});
 
 			$('#animate-clone-locations').cloneya().on('before_clone.cloneya', function (event, toclone) {
+				// do something
+			}).on('after_clone.cloneya', function (event, toclone, newclone) {
+				// do something
+			}).on('before_append.cloneya', function (event, toclone, newclone) {
+				$(newclone).css('display', 'none');
+				$(toclone).fadeOut('fast', function () {
+					$(this).fadeIn('fast');
+				});
+			}).on('after_append.cloneya', function (event, toclone, newclone) {
+				$(newclone).slideToggle();
+				console.log('finished cloning ' + toclone.attr('id') + ' to ' + newclone.attr('id'));
+			}).off('remove.cloneya').on('remove.cloneya', function (event, clone) {
+				clone.css('background-color', 'red');
+
+				$(clone).slideToggle('slow', function () {
+					$(clone).remove();
+				});
+
+			}).on('after_delete.cloneya', function () {
+				console.log('deleted');
+			});
+			$('#animate-clone-appts').cloneya().on('before_clone.cloneya', function (event, toclone) {
 				// do something
 			}).on('after_clone.cloneya', function (event, toclone, newclone) {
 				// do something
@@ -1362,6 +1430,8 @@
 			});
 		</script>
 	</body>
+</html>
+
 </html>
 
 </html>
