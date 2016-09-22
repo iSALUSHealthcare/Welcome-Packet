@@ -96,6 +96,11 @@
 	font-size: 14px;
 	line-height: 2em;
 }
+
+i:hover{
+	content: attr(title);
+
+}
 /* Radio and checkbox
 =============================== */
 .j-forms.blue .checkbox:hover i,
