@@ -1,188 +1,280 @@
 /* ========================================= */
+
+
 /* Color: cyan */
+
+
 /* ========================================= */
+
 
 /* Buttons
 =============================== */
-.j-forms.blue .primary-btn,
-.j-forms.blue .file-button,
-.j-forms.blue .secondary-btn { background-color:#0072cb; }
 
-.j-forms.blue .primary-btn.disabled-view,
-.j-forms.blue .secondary-btn.disabled-view,
-.j-forms.blue .disabled-view .file-button { background-color:#0072cb !important; }
+.j-forms.blue .primary-btn, .j-forms.blue .file-button, .j-forms.blue .secondary-btn {
+    background-color: #0072cb;
+}
 
-.j-forms.blue .primary-btn:hover,
-.j-forms.blue .file-button:hover,
-.j-forms.blue .secondary-btn:hover { background-color:#00bcd4; }
+.j-forms.blue .primary-btn.disabled-view, .j-forms.blue .secondary-btn.disabled-view, .j-forms.blue .disabled-view .file-button {
+    background-color: #0072cb !important;
+}
 
-.j-forms.blue .file-button:hover + input { border:2px solid rgba(0,114,203,.6); }
+.j-forms.blue .primary-btn:hover, .j-forms.blue .file-button:hover, .j-forms.blue .secondary-btn:hover {
+    background-color: #00bcd4;
+}
+
+.j-forms.blue .file-button:hover+input {
+    border: 2px solid rgba(0, 114, 203, .6);
+}
+
 
 /* Ratings
 =============================== */
-.j-forms.blue .ratings input + label:hover,
-.j-forms.blue .ratings input + label:hover ~ label,
-.j-forms.blue .ratings input:checked + label,
-.j-forms.blue .ratings input:checked + label ~ label { color:#0072cb; }
+
+.j-forms.blue .ratings input+label:hover, .j-forms.blue .ratings input+label:hover~label, .j-forms.blue .ratings input:checked+label, .j-forms.blue .ratings input:checked+label~label {
+    color: #0072cb;
+}
+
 
 /* Header + footer
 =============================== */
+
 .j-forms.blue .header {
-	-webkit-box-shadow:0 6px 3px -3px rgba(0,114,203,.0);
-	-moz-box-shadow:0 6px 3px -3px rgba(0,114,203,.0);
-	-o-box-shadow:0 6px 3px -3px rgba(0,114,203,.0);
-	box-shadow:0 6px 3px -3px rgba(0,114,203,.0);
-	border-top:1px solid #0082e5;
-	background-color:#0072cb;
+    -webkit-box-shadow: 0 6px 3px -3px rgba(0, 114, 203, .0);
+    -moz-box-shadow: 0 6px 3px -3px rgba(0, 114, 203, .0);
+    -o-box-shadow: 0 6px 3px -3px rgba(0, 114, 203, .0);
+    box-shadow: 0 6px 3px -3px rgba(0, 114, 203, .0);
+    border-top: 1px solid #0082e5;
+    background-color: #0072cb;
 }
-.j-forms.blue .footer { border-top:1px solid #0072cb; background-color:white; }
+
+.j-forms.blue .footer {
+    border-top: 1px solid #0072cb;
+    background-color: white;
+}
+
 
 /* Multistep form
 =============================== */
-.j-forms .active-step .steps { background-color:white; border:1px solid #0072cb; }
 
-.j-forms .passed-step .steps { background-color:white; border:1px solid white; }
+.j-forms .active-step .steps {
+    background-color: white;
+    border: 1px solid #0072cb;
+}
+
+.j-forms .passed-step .steps {
+    background-color: white;
+    border: 1px solid white;
+}
+
 
 /* Other
 =============================== */
-.j-forms.blue .divider-text span { color:#0072cb; }
 
-.j-forms.blue,
-.j-forms.blue .divider-text span { background-color:#f7f7f7; }
-
-.j-forms p.note{
-	padding: 20px 10px;
-	background-color: #DFF0D8;
-	border-radius: 6px;
+.j-forms.blue .divider-text span {
+    color: #0072cb;
 }
 
-.j-forms .toclone.cloneya:not(:first-child){
-	border-top: 1px solid rgba(0,0,0,.12);
-	padding-top: 25px;
-
+.j-forms.blue, .j-forms.blue .divider-text span {
+    background-color: #f7f7f7;
 }
 
-.j-forms input:disabled{
-	background-color: #0072cb;
+.j-forms p.note {
+    padding: 20px 10px;
+    background-color: #DFF0D8;
+    border-radius: 6px;
 }
 
-.j-forms input:disabled::-webkit-input-placeholder{
-	color:white;
+.j-forms .toclone.cloneya:not(:first-child) {
+    border-top: 1px solid rgba(0, 0, 0, .12);
+    padding-top: 25px;
 }
 
-.j-forms input:disabled::-moz-placeholder{
-	color:white;
+.j-forms input:disabled {
+    background-color: #0072cb;
 }
 
-.j-forms input:disabled:-ms-input-placeholder{
-	color:white;
+.j-forms input:disabled::-webkit-input-placeholder {
+    color: white;
 }
 
-.j-forms input:disabled:-moz-placeholder{
-	color:white;
+.j-forms input:disabled::-moz-placeholder {
+    color: white;
 }
 
-#schedule input{
-	border-radius: 0px;
-	border-width: 1px;
-
+.j-forms input:disabled:-ms-input-placeholder {
+    color: white;
 }
 
-#schedule .unit{
-	padding: 0px;
+.j-forms input:disabled:-moz-placeholder {
+    color: white;
 }
 
-.j-forms p.lead{
-	font-size: 14px;
-	line-height: 2em;
+/*#schedule input {
+    border-radius: 0px;
+    border-width: 1px;
+}*/
+
+/*#schedule .unit {
+    padding: 0px;
+}*/
+
+.j-forms p.lead {
+    font-size: 14px;
+    line-height: 2em;
 }
 
-i:hover{
-	content: attr(title);
-
+i:hover {
+    content: attr(title);
 }
+
+button a {
+    color: white;
+    text-decoration: none;
+    padding: 24px 0px;
+}
+.header p{
+	text-align: right;
+}
+.header img.logo {
+    max-height: 70px;
+    left: 25px;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+}
+
+.header{
+	position: relative;
+}
+
+
 /* Radio and checkbox
 =============================== */
-.j-forms.blue .checkbox:hover i,
-.j-forms.blue .radio:hover i { border:2px solid rgba(0,114,203,.6); }
 
-.j-forms.blue .radio input:checked + i,
-.j-forms.blue .checkbox input:checked + i { border:2px solid rgba(0,114,203,.9); color:rgba(0,151,167,.9); }
+.j-forms.blue .checkbox:hover i, .j-forms.blue .radio:hover i {
+    border: 2px solid rgba(0, 114, 203, .6);
+}
 
-.j-forms.blue .radio i:after { background-color:rgba(0,151,167,.9); }
+.j-forms.blue .radio input:checked+i, .j-forms.blue .checkbox input:checked+i {
+    border: 2px solid rgba(0, 114, 203, .9);
+    color: rgba(0, 151, 167, .9);
+}
 
-.j-forms.blue .checkbox i:after { border-bottom:solid rgb(0,151,167); border-left:solid rgb(0,151,167); }
+.j-forms.blue .radio i:after {
+    background-color: rgba(0, 151, 167, .9);
+}
+
+.j-forms.blue .checkbox i:after {
+    border-bottom: solid rgb(0, 151, 167);
+    border-left: solid rgb(0, 151, 167);
+}
+
 
 /* Toggle radio and toggle checkboxe
 =============================== */
-.j-forms.blue .checkbox-toggle:hover i,
-.j-forms.blue .radio-toggle:hover i { border:2px solid rgba(0,114,203,.6); }
 
-.j-forms.blue .radio-toggle input:checked + i,
-.j-forms.blue .checkbox-toggle input:checked + i { border:2px solid rgba(0,114,203,.9); }
+.j-forms.blue .checkbox-toggle:hover i, .j-forms.blue .radio-toggle:hover i {
+    border: 2px solid rgba(0, 114, 203, .6);
+}
 
-.j-forms.blue .radio-toggle i:before,
-.j-forms.blue .checkbox-toggle i:before { background-color:rgba(0,151,167,.9); }
+.j-forms.blue .radio-toggle input:checked+i, .j-forms.blue .checkbox-toggle input:checked+i {
+    border: 2px solid rgba(0, 114, 203, .9);
+}
 
-.j-forms.blue .checkbox-toggle input:checked + i,
-.j-forms.blue .radio-toggle input:checked + i { background-color:white; }
+.j-forms.blue .radio-toggle i:before, .j-forms.blue .checkbox-toggle i:before {
+    background-color: rgba(0, 151, 167, .9);
+}
+
+.j-forms.blue .checkbox-toggle input:checked+i, .j-forms.blue .radio-toggle input:checked+i {
+    background-color: white;
+}
+
 
 /* Tooltip
 =============================== */
-.j-forms.blue .tooltip,
-.j-forms.blue .tooltip-image { background-color:#006064; }
 
-.j-forms.blue .tooltip-left-top:before { border-color:#006064 transparent; }
+.j-forms.blue .tooltip, .j-forms.blue .tooltip-image {
+    background-color: #006064;
+}
 
-.j-forms.blue .tooltip-right-top:before{ border-color:#006064 transparent; }
+.j-forms.blue .tooltip-left-top:before {
+    border-color: #006064 transparent;
+}
 
-.j-forms.blue .tooltip-right-bottom:before{ border-color:#006064 transparent; }
+.j-forms.blue .tooltip-right-top:before {
+    border-color: #006064 transparent;
+}
 
-.j-forms.blue .tooltip-left-bottom:before{ border-color:#006064 transparent; }
+.j-forms.blue .tooltip-right-bottom:before {
+    border-color: #006064 transparent;
+}
 
-.j-forms.blue .tooltip-right-side:before{ border-color:transparent #006064; }
+.j-forms.blue .tooltip-left-bottom:before {
+    border-color: #006064 transparent;
+}
 
-.j-forms.blue .tooltip-left-side:before{ border-color:transparent #006064; }
+.j-forms.blue .tooltip-right-side:before {
+    border-color: transparent #006064;
+}
+
+.j-forms.blue .tooltip-left-side:before {
+    border-color: transparent #006064;
+}
+
 
 /* Input
 =============================== */
-.j-forms.blue input[type="text"]:hover,
-.j-forms.blue input[type="password"]:hover,
-.j-forms.blue input[type="email"]:hover,
-.j-forms.blue input[type="search"]:hover,
-.j-forms.blue input[type="url"]:hover,
-.j-forms.blue textarea:hover,
-.j-forms.blue select:hover { border:2px solid rgba(0,114,203,.6); }
 
-.j-forms.blue input[type="text"]:focus,
-.j-forms.blue input[type="password"]:focus,
-.j-forms.blue input[type="email"]:focus,
-.j-forms.blue input[type="search"]:focus,
-.j-forms.blue input[type="url"]:focus,
-.j-forms.blue textarea:focus,
-.j-forms.blue select:focus { border:2px solid rgba(0,114,203,.9); }
+.j-forms.blue input[type="text"]:hover, .j-forms.blue input[type="password"]:hover, .j-forms.blue input[type="email"]:hover, .j-forms.blue input[type="search"]:hover, .j-forms.blue input[type="url"]:hover, .j-forms.blue textarea:hover, .j-forms.blue select:hover {
+    border: 2px solid rgba(0, 114, 203, .6);
+}
+
+.j-forms.blue input[type="text"]:focus, .j-forms.blue input[type="password"]:focus, .j-forms.blue input[type="email"]:focus, .j-forms.blue input[type="search"]:focus, .j-forms.blue input[type="url"]:focus, .j-forms.blue textarea:focus, .j-forms.blue select:focus {
+    border: 2px solid rgba(0, 114, 203, .9);
+}
+
 
 /* TinyMCE input
 =============================== */
-.j-forms .input .mce-tinymce:hover { border:2px solid rgba(0,114,203,.6) !important; }
+
+.j-forms .input .mce-tinymce:hover {
+    border: 2px solid rgba(0, 114, 203, .6) !important;
+}
+
 
 /* Image radio and Image checkbox
 =============================== */
-.j-forms.blue .radio-block input:checked + i,
-.j-forms.blue .checkbox-block input:checked + i { border:2px solid rgba(0,114,203,.9); color:rgba(0,151,167,.9); }
 
-.j-forms.blue .radio-block i:after { background-color:rgba(0,151,167,.9); }
+.j-forms.blue .radio-block input:checked+i, .j-forms.blue .checkbox-block input:checked+i {
+    border: 2px solid rgba(0, 114, 203, .9);
+    color: rgba(0, 151, 167, .9);
+}
 
-.j-forms.blue .checkbox-block i:after { border-bottom:solid rgba(0,151,167,.9); border-left:solid rgba(0,151,167,.9); }
+.j-forms.blue .radio-block i:after {
+    background-color: rgba(0, 151, 167, .9);
+}
 
-.j-forms.blue .checkbox-block .block-content:hover,
-.j-forms.blue .radio-block .block-content:hover { background:rgba(224,247,250,.5); }
+.j-forms.blue .checkbox-block i:after {
+    border-bottom: solid rgba(0, 151, 167, .9);
+    border-left: solid rgba(0, 151, 167, .9);
+}
 
-.j-forms.blue .checkbox-block input:checked ~ .block-content,
-.j-forms.blue .radio-block input:checked ~ .block-content { background-color:white; }
+.j-forms.blue .checkbox-block .block-content:hover, .j-forms.blue .radio-block .block-content:hover {
+    background: rgba(224, 247, 250, .5);
+}
+
+.j-forms.blue .checkbox-block input:checked~.block-content, .j-forms.blue .radio-block input:checked~.block-content {
+    background-color: white;
+}
+
 
 /* Multiple Select Plugin
 =============================== */
-.j-forms .ms-choice:hover { border:2px solid rgba(0,114,203,.6); }
 
-.j-forms .ms-choice:focus { border:2px solid rgba(0,114,203,.9); }
+.j-forms .ms-choice:hover {
+    border: 2px solid rgba(0, 114, 203, .6);
+}
+
+.j-forms .ms-choice:focus {
+    border: 2px solid rgba(0, 114, 203, .9);
+}
