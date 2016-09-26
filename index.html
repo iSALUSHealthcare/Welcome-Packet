@@ -1444,7 +1444,40 @@
 												</div>
 												<!-- end upload other -->
 											</div>
-											<button type="reset" class="secondary-btn">Clear Documents</button>
+											<div id="animate-clone-documents" class="clone-documents">
+												<div class="divider gap-bottom-25"></div>
+												<h2>Additional Documents</h2>
+												<div class="toclone cloneya">
+
+													<a href="#" class="link clone">Add Additional Documents</a>
+													<a href="#" class="link delete">Remove Additional Documents</a>
+													<div class="j-row">
+														<!-- start upload fee schedule -->
+														<div class="span6 unit">
+															<label class="input append-small-btn">
+																<div class="file-button">
+																	Browse
+																	<input type="file" name="additional_document_1" onchange="document.getElementById('fee_schedule_input').value = this.value;">
+																</div>
+																<input type="text" id="additonal-document-1" readonly="" placeholder="Additional Document">
+															</label>
+														</div>
+														<!-- end upload fee schedule -->
+														<!-- start upload superbill -->
+														<div class="span6 unit">
+															<label class="input append-small-btn">
+																<div class="file-button">
+																	Browse
+																	<input type="file" name="additional_document_2" onchange="document.getElementById('superbill_input').value = this.value;">
+																</div>
+																<input type="text" id="additonal-document-2" readonly="" placeholder="Additional Document">
+															</label>
+														</div>
+														<!-- end upload superbill -->
+													</div>
+												</div>
+											</div>
+											<button type="reset" class="tertiary-btn">Clear Documents</button>
 										</fieldset>
 										<!-- End Documents -->
 

@@ -147,6 +147,25 @@ button a {
 	position: relative;
 }
 
+.tertiary-btn{
+  background-color: #f22121;
+  border: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    color: #fff;
+    display: block;
+    cursor: pointer;
+    float: right;
+    font: 16px 'Open Sans',Helvetica,Arial,sans-serif;
+    height: 48px;
+    margin: 10px 0 10px 20px;
+    outline: none;
+    padding: 0 25px;
+    white-space: nowrap;
+}
+
 
 /* Radio and checkbox
 =============================== */

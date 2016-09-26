@@ -28,6 +28,7 @@ $('.clone-users').cloneya();
 $('.clone-locations').cloneya();
 $('.clone-payers').cloneya();
 $('.clone-appts').cloneya();
+$('.clone-documents').cloneya();
 $('#animate-clone-users').cloneya().on('before_clone.cloneya', function (event, toclone) {
   // do something
 }).on('after_clone.cloneya', function (event, toclone, newclone) {
@@ -97,6 +98,29 @@ $('#animate-clone-appts').cloneya().on('before_clone.cloneya', function (event, 
 });
 
 $('#animate-clone-payers').cloneya().on('before_clone.cloneya', function (event, toclone) {
+  // do something
+}).on('after_clone.cloneya', function (event, toclone, newclone) {
+  // do something
+}).on('before_append.cloneya', function (event, toclone, newclone) {
+  $(newclone).css('display', 'none');
+  $(toclone).fadeOut('fast', function () {
+    $(this).fadeIn('fast');
+  });
+}).on('after_append.cloneya', function (event, toclone, newclone) {
+  $(newclone).slideToggle();
+  console.log('finished cloning ' + toclone.attr('id') + ' to ' + newclone.attr('id'));
+}).off('remove.cloneya').on('remove.cloneya', function (event, clone) {
+  clone.css('background-color', 'red');
+
+  $(clone).slideToggle('slow', function () {
+    $(clone).remove();
+  });
+
+}).on('after_delete.cloneya', function () {
+  console.log('deleted');
+});
+
+$('#animate-clone-documents').cloneya().on('before_clone.cloneya', function (event, toclone) {
   // do something
 }).on('after_clone.cloneya', function (event, toclone, newclone) {
   // do something
