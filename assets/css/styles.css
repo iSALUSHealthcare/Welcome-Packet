@@ -641,10 +641,9 @@
 	cursor:pointer;
 	float:right;
 	font:16px 'Open Sans',Helvetica,Arial,sans-serif;
-	height:48px;
 	margin:10px 0 10px 20px;
 	outline:none;
-	padding:0 25px;
+	padding:10px 25px;
 	white-space:nowrap;
 }
 .j-forms .primary-btn { position:relative; }

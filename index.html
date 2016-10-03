@@ -27,7 +27,7 @@
 			<form action="" method="" class="j-forms blue j-multistep" id="j-forms" novalidate>
 				<div class="header">
 					<p>OfficeEMR™ Welcome Packet</p>
-					<img class="logo" src="assets\img\iSALUS_Logo_Current_All_White.png"/>
+					<img class="logo" src="assets\img\iSALUS_Logo_Current.png"/>
 				</div>
 				<!-- end /.header-->
 				<div class="content">
@@ -93,7 +93,7 @@
 							<a href="" class="step-link" data-step-number="8">
 								<div class="steps">
 									<span>Step 8:</span>
-									<p>Additional Services</p>
+									<p>Appointment Reminders</p>
 								</div>
 							</a>
 						</div>
@@ -101,6 +101,22 @@
 							<a href="" class="step-link" data-step-number="9">
 								<div class="steps">
 									<span>Step 9:</span>
+									<p>Electronic Statements</p>
+								</div>
+							</a>
+						</div>
+						<div class="span3 step">
+							<a href="" class="step-link" data-step-number="10">
+								<div class="steps">
+									<span>Step 10:</span>
+									<p>Integrated Faxing</p>
+								</div>
+							</a>
+						</div>
+						<div class="span3 step">
+							<a href="" class="step-link" data-step-number="11">
+								<div class="steps">
+									<span>Step 11:</span>
 									<p>Documents</p>
 								</div>
 							</a>
@@ -148,62 +164,63 @@
 							<!-- start state -->
 							<div class="span4 unit">
 								<div class="unit">
-									<label class="input select">
-										<select autocomplete="off" multiple="" id="company-state">
-											<option value="AL">Alabama</option>
-											<option value="AK">Alaska</option>
-											<option value="AZ">Arizona</option>
-											<option value="AR">Arkansas</option>
-											<option value="CA">California</option>
-											<option value="CO">Colorado</option>
-											<option value="CT">Connecticut</option>
-											<option value="DE">Delaware</option>
-											<option value="DC">District Of Columbia</option>
-											<option value="FL">Florida</option>
-											<option value="GA">Georgia</option>
-											<option value="HI">Hawaii</option>
-											<option value="ID">Idaho</option>
-											<option value="IL">Illinois</option>
-											<option value="IN">Indiana</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-											<option value="LA">Louisiana</option>
-											<option value="ME">Maine</option>
-											<option value="MD">Maryland</option>
-											<option value="MA">Massachusetts</option>
-											<option value="MI">Michigan</option>
-											<option value="MN">Minnesota</option>
-											<option value="MS">Mississippi</option>
-											<option value="MO">Missouri</option>
-											<option value="MT">Montana</option>
-											<option value="NE">Nebraska</option>
-											<option value="NV">Nevada</option>
-											<option value="NH">New Hampshire</option>
-											<option value="NJ">New Jersey</option>
-											<option value="NM">New Mexico</option>
-											<option value="NY">New York</option>
-											<option value="NC">North Carolina</option>
-											<option value="ND">North Dakota</option>
-											<option value="OH">Ohio</option>
-											<option value="OK">Oklahoma</option>
-											<option value="OR">Oregon</option>
-											<option value="PA">Pennsylvania</option>
-											<option value="RI">Rhode Island</option>
-											<option value="SC">South Carolina</option>
-											<option value="SD">South Dakota</option>
-											<option value="TN">Tennessee</option>
-											<option value="TX">Texas</option>
-											<option value="UT">Utah</option>
-											<option value="VT">Vermont</option>
-											<option value="VA">Virginia</option>
-											<option value="WA">Washington</option>
-											<option value="WV">West Virginia</option>
-											<option value="WI">Wisconsin</option>
-											<option value="WY">Wyoming</option>
-										</select>
-										<i></i>
-									</label>
+									<select>
+										<option disabled selected>
+											Select state
+										</option>
+										<option value="AL">Alabama</option>
+										<option value="AK">Alaska</option>
+										<option value="AZ">Arizona</option>
+										<option value="AR">Arkansas</option>
+										<option value="CA">California</option>
+										<option value="CO">Colorado</option>
+										<option value="CT">Connecticut</option>
+										<option value="DE">Delaware</option>
+										<option value="DC">District Of Columbia</option>
+										<option value="FL">Florida</option>
+										<option value="GA">Georgia</option>
+										<option value="HI">Hawaii</option>
+										<option value="ID">Idaho</option>
+										<option value="IL">Illinois</option>
+										<option value="IN">Indiana</option>
+										<option value="IA">Iowa</option>
+										<option value="KS">Kansas</option>
+										<option value="KY">Kentucky</option>
+										<option value="LA">Louisiana</option>
+										<option value="ME">Maine</option>
+										<option value="MD">Maryland</option>
+										<option value="MA">Massachusetts</option>
+										<option value="MI">Michigan</option>
+										<option value="MN">Minnesota</option>
+										<option value="MS">Mississippi</option>
+										<option value="MO">Missouri</option>
+										<option value="MT">Montana</option>
+										<option value="NE">Nebraska</option>
+										<option value="NV">Nevada</option>
+										<option value="NH">New Hampshire</option>
+										<option value="NJ">New Jersey</option>
+										<option value="NM">New Mexico</option>
+										<option value="NY">New York</option>
+										<option value="NC">North Carolina</option>
+										<option value="ND">North Dakota</option>
+										<option value="OH">Ohio</option>
+										<option value="OK">Oklahoma</option>
+										<option value="OR">Oregon</option>
+										<option value="PA">Pennsylvania</option>
+										<option value="RI">Rhode Island</option>
+										<option value="SC">South Carolina</option>
+										<option value="SD">South Dakota</option>
+										<option value="TN">Tennessee</option>
+										<option value="TX">Texas</option>
+										<option value="UT">Utah</option>
+										<option value="VT">Vermont</option>
+										<option value="VA">Virginia</option>
+										<option value="WA">Washington</option>
+										<option value="WV">West Virginia</option>
+										<option value="WI">Wisconsin</option>
+										<option value="WY">Wyoming</option>
+									</select>
+									<i class="fa fa-sort-desc" aria-hidden="true"></i>
 								</div>
 							</div>
 							<!-- end state -->
@@ -243,16 +260,14 @@
 							<!-- start npi type -->
 							<div class="span4 unit">
 								<div class="unit">
-									<label class="input select">
-										<select autocomplete="off" multiple="" id="company-npi">
-											<option>Select NPI Type</option>
-											<option>Individual</option>
-											<option>Group</option>
-
-										</select>
-										<i></i>
-									</label>
-
+									<select>
+										<option disabled selected>
+											Please select NPI type
+										</option>
+										<option>Individual</option>
+										<option>Group</option>
+									</select>
+									<i class="fa fa-sort-desc" aria-hidden="true"></i>
 								</div>
 							</div>
 							<!-- end npi type -->
@@ -340,114 +355,323 @@
 							<!-- start bill to state -->
 							<div class="span3 unit">
 								<div class="unit">
-									<label class="input select">
-										<select autocomplete="off" multiple="" id="bill-to-state">
-											<option value="AL">Alabama</option>
-											<option value="AK">Alaska</option>
-											<option value="AZ">Arizona</option>
-											<option value="AR">Arkansas</option>
-											<option value="CA">California</option>
-											<option value="CO">Colorado</option>
-											<option value="CT">Connecticut</option>
-											<option value="DE">Delaware</option>
-											<option value="DC">District Of Columbia</option>
-											<option value="FL">Florida</option>
-											<option value="GA">Georgia</option>
-											<option value="HI">Hawaii</option>
-											<option value="ID">Idaho</option>
-											<option value="IL">Illinois</option>
-											<option value="IN">Indiana</option>
-											<option value="IA">Iowa</option>
-											<option value="KS">Kansas</option>
-											<option value="KY">Kentucky</option>
-											<option value="LA">Louisiana</option>
-											<option value="ME">Maine</option>
-											<option value="MD">Maryland</option>
-											<option value="MA">Massachusetts</option>
-											<option value="MI">Michigan</option>
-											<option value="MN">Minnesota</option>
-											<option value="MS">Mississippi</option>
-											<option value="MO">Missouri</option>
-											<option value="MT">Montana</option>
-											<option value="NE">Nebraska</option>
-											<option value="NV">Nevada</option>
-											<option value="NH">New Hampshire</option>
-											<option value="NJ">New Jersey</option>
-											<option value="NM">New Mexico</option>
-											<option value="NY">New York</option>
-											<option value="NC">North Carolina</option>
-											<option value="ND">North Dakota</option>
-											<option value="OH">Ohio</option>
-											<option value="OK">Oklahoma</option>
-											<option value="OR">Oregon</option>
-											<option value="PA">Pennsylvania</option>
-											<option value="RI">Rhode Island</option>
-											<option value="SC">South Carolina</option>
-											<option value="SD">South Dakota</option>
-											<option value="TN">Tennessee</option>
-											<option value="TX">Texas</option>
-											<option value="UT">Utah</option>
-											<option value="VT">Vermont</option>
-											<option value="VA">Virginia</option>
-											<option value="WA">Washington</option>
-											<option value="WV">West Virginia</option>
-											<option value="WI">Wisconsin</option>
-											<option value="WY">Wyoming</option>
-										</select>
-										<i></i>
-									</div>
-								</div>
-								<!-- end bill to state -->
-								<!-- start bill to zip -->
-								<div class="span3 unit">
-									<div class="input">
-										<input type="text" placeholder="Zip Code" id="bill-to-zip" name="bill_to_zip">
-									</div>
-								</div>
-								<!-- end bill to zip -->
-								<!-- start bill to phone -->
-								<div class="span3 unit">
-									<div class="input">
-										<input type="text" placeholder="Phone" id="bill-to-phone" name="bill_to_phone">
-									</div>
-								</div>
-								<!-- end bill to phone -->
-							</div>
-							<!-- end bill to-->
-							<div class="divider gap-bottom-25"></div>
-							<h2>Pay To Address (PO Box Only)</h2>
-							<!-- start pay to -->
-							<div class="j-row">
-								<!-- start pay to group name -->
-								<div class="span12 unit">
-									<div class="input">
-										<input type="text" placeholder="Group or Individual Name" id="pay-to-group-name" name="pay_to_group_name">
-									</div>
+									<select>
+										<option disabled selected>
+											Select state
+										</option>
+										<option value="AL">Alabama</option>
+										<option value="AK">Alaska</option>
+										<option value="AZ">Arizona</option>
+										<option value="AR">Arkansas</option>
+										<option value="CA">California</option>
+										<option value="CO">Colorado</option>
+										<option value="CT">Connecticut</option>
+										<option value="DE">Delaware</option>
+										<option value="DC">District Of Columbia</option>
+										<option value="FL">Florida</option>
+										<option value="GA">Georgia</option>
+										<option value="HI">Hawaii</option>
+										<option value="ID">Idaho</option>
+										<option value="IL">Illinois</option>
+										<option value="IN">Indiana</option>
+										<option value="IA">Iowa</option>
+										<option value="KS">Kansas</option>
+										<option value="KY">Kentucky</option>
+										<option value="LA">Louisiana</option>
+										<option value="ME">Maine</option>
+										<option value="MD">Maryland</option>
+										<option value="MA">Massachusetts</option>
+										<option value="MI">Michigan</option>
+										<option value="MN">Minnesota</option>
+										<option value="MS">Mississippi</option>
+										<option value="MO">Missouri</option>
+										<option value="MT">Montana</option>
+										<option value="NE">Nebraska</option>
+										<option value="NV">Nevada</option>
+										<option value="NH">New Hampshire</option>
+										<option value="NJ">New Jersey</option>
+										<option value="NM">New Mexico</option>
+										<option value="NY">New York</option>
+										<option value="NC">North Carolina</option>
+										<option value="ND">North Dakota</option>
+										<option value="OH">Ohio</option>
+										<option value="OK">Oklahoma</option>
+										<option value="OR">Oregon</option>
+										<option value="PA">Pennsylvania</option>
+										<option value="RI">Rhode Island</option>
+										<option value="SC">South Carolina</option>
+										<option value="SD">South Dakota</option>
+										<option value="TN">Tennessee</option>
+										<option value="TX">Texas</option>
+										<option value="UT">Utah</option>
+										<option value="VT">Vermont</option>
+										<option value="VA">Virginia</option>
+										<option value="WA">Washington</option>
+										<option value="WV">West Virginia</option>
+										<option value="WI">Wisconsin</option>
+										<option value="WY">Wyoming</option>
+									</select>
+									<i class="fa fa-sort-desc" aria-hidden="true"></i>
 								</div>
 							</div>
-							<!-- end pay to group name -->
-							<div class="j-row">
-								<!-- start pay to mailing address -->
-								<div class="span12 unit">
-									<div class="input">
-										<input type="text" placeholder="Mailing Address" id="pay-to-mailing-address" name="pay_to_mailing_address">
-									</div>
+							<!-- end bill to state -->
+							<!-- start bill to zip -->
+							<div class="span3 unit">
+								<div class="input">
+									<input type="text" placeholder="Zip Code" id="bill-to-zip" name="bill_to_zip">
 								</div>
-								<!-- end pay to address -->
 							</div>
-							<div class="j-row">
-								<!-- start pay to city -->
-								<div class="span3 unit">
-									<div class="input">
-										<input type="text" placeholder="City" id="pay-to-city" name="pay_to_city">
-									</div>
+							<!-- end bill to zip -->
+							<!-- start bill to phone -->
+							<div class="span3 unit">
+								<div class="input">
+									<input type="text" placeholder="Phone" id="bill-to-phone" name="bill_to_phone">
 								</div>
-								<!-- end pay to city -->
-								<!-- start pay to state -->
-								<div class="span3 unit">
-									<div class="unit">
-										<label class="input select">
-											<select autocomplete="off" multiple="" id="pay-to-state">
+							</div>
+							<!-- end bill to phone -->
+						</div>
+						<!-- end bill to-->
+						<div class="divider gap-bottom-25"></div>
+						<h2>Pay To Address (PO Box Only)</h2>
+						<!-- start pay to -->
+						<div class="j-row">
+							<!-- start pay to group name -->
+							<div class="span12 unit">
+								<div class="input">
+									<input type="text" placeholder="Group or Individual Name" id="pay-to-group-name" name="pay_to_group_name">
+								</div>
+							</div>
+						</div>
+						<!-- end pay to group name -->
+						<div class="j-row">
+							<!-- start pay to mailing address -->
+							<div class="span12 unit">
+								<div class="input">
+									<input type="text" placeholder="Mailing Address" id="pay-to-mailing-address" name="pay_to_mailing_address">
+								</div>
+							</div>
+							<!-- end pay to address -->
+						</div>
+						<div class="j-row">
+							<!-- start pay to city -->
+							<div class="span3 unit">
+								<div class="input">
+									<input type="text" placeholder="City" id="pay-to-city" name="pay_to_city">
+								</div>
+							</div>
+							<!-- end pay to city -->
+							<!-- start pay to state -->
+							<div class="span3 unit">
+								<div class="unit">
+									<select>
+										<option disabled selected>
+											Select state
+										</option>
+										<option value="AL">Alabama</option>
+										<option value="AK">Alaska</option>
+										<option value="AZ">Arizona</option>
+										<option value="AR">Arkansas</option>
+										<option value="CA">California</option>
+										<option value="CO">Colorado</option>
+										<option value="CT">Connecticut</option>
+										<option value="DE">Delaware</option>
+										<option value="DC">District Of Columbia</option>
+										<option value="FL">Florida</option>
+										<option value="GA">Georgia</option>
+										<option value="HI">Hawaii</option>
+										<option value="ID">Idaho</option>
+										<option value="IL">Illinois</option>
+										<option value="IN">Indiana</option>
+										<option value="IA">Iowa</option>
+										<option value="KS">Kansas</option>
+										<option value="KY">Kentucky</option>
+										<option value="LA">Louisiana</option>
+										<option value="ME">Maine</option>
+										<option value="MD">Maryland</option>
+										<option value="MA">Massachusetts</option>
+										<option value="MI">Michigan</option>
+										<option value="MN">Minnesota</option>
+										<option value="MS">Mississippi</option>
+										<option value="MO">Missouri</option>
+										<option value="MT">Montana</option>
+										<option value="NE">Nebraska</option>
+										<option value="NV">Nevada</option>
+										<option value="NH">New Hampshire</option>
+										<option value="NJ">New Jersey</option>
+										<option value="NM">New Mexico</option>
+										<option value="NY">New York</option>
+										<option value="NC">North Carolina</option>
+										<option value="ND">North Dakota</option>
+										<option value="OH">Ohio</option>
+										<option value="OK">Oklahoma</option>
+										<option value="OR">Oregon</option>
+										<option value="PA">Pennsylvania</option>
+										<option value="RI">Rhode Island</option>
+										<option value="SC">South Carolina</option>
+										<option value="SD">South Dakota</option>
+										<option value="TN">Tennessee</option>
+										<option value="TX">Texas</option>
+										<option value="UT">Utah</option>
+										<option value="VT">Vermont</option>
+										<option value="VA">Virginia</option>
+										<option value="WA">Washington</option>
+										<option value="WV">West Virginia</option>
+										<option value="WI">Wisconsin</option>
+										<option value="WY">Wyoming</option>
+									</select>
+									<i class="fa fa-sort-desc" aria-hidden="true"></i>
+								</div>
+							</div>
+							<!-- end pay to state -->
+							<!-- start pay to zip -->
+							<div class="span3 unit">
+								<div class="input">
+									<input type="text" placeholder="Zip Code" id="pay-to-zip" name="pay_to_zip">
+								</div>
+							</div>
+							<!-- end pay to zip -->
+							<div class="span3 unit">
+								<div class="input">
+									<input type="text" placeholder="Phone" id="pay-to-phone" name="pay_to_phone">
+								</div>
+							</div>
+							<!-- end pay to zip -->
+						</div>
+						<!-- end pay to -->
+					</fieldset>
+					<!-- End Billing Section -->
+					<!-- Start Providers -->
+					<fieldset>
+						<div class="divider gap-bottom-25"></div>
+						<h2>Instructions</h2>
+						<p class="lead">Please provide the following information for each provider. Keep in mind, a provider is any person that will need their name on a claim or prescription or will have patient’s scheduled with them.
+						</p>
+						<div class="divider gap-bottom-25"></div>
+						<div id="animate-clone-users" class="clone-users">
+							<div class="toclone cloneya">
+								<a href="#" class="link clone">Add Another Provider</a>
+								<a href="#" class="link delete">Delete Provider</a>
+								<div class="j-row">
+									<!-- start provider first name -->
+									<div class="span4 unit">
+										<div class="input">
+											<input type="text" placeholder="First Name" name="provider_first_name">
+										</div>
+									</div>
+									<!-- end provider first name -->
+									<!-- start provider middle name -->
+									<div class="span2 unit">
+										<div class="input">
+											<input type="text" placeholder="Middle" name="provider_middle_name">
+										</div>
+									</div>
+									<!-- end provider middle name -->
+									<!-- start provider last name -->
+									<div class="span4 unit">
+										<div class="input">
+											<input type="email" placeholder="Last Name" name="provider_last_name">
+										</div>
+									</div>
+									<!-- end provider last name -->
+									<!-- start provider suffix -->
+									<div class="span2 unit">
+										<div class="input">
+											<input type="email" placeholder="Suffix" name="provider_suffix">
+										</div>
+									</div>
+									<!-- end provider suffix -->
+								</div>
+								<div class="j-row">
+									<!-- start provider specialty -->
+									<div class="span3 unit">
+										<div class="input">
+											<input type="text" placeholder="Specialty or Taxonomy" name="provider_specialty">
+										</div>
+									</div>
+									<!-- end provider specialty -->
+									<!-- start provider npi -->
+									<div class="span3 unit">
+										<div class="input">
+											<input type="text" placeholder="NPI" id="provider-npi" name="provider_npi">
+											<span class="tooltip tooltip-right-top">This should be 10 numbers.</span>
+										</div>
+									</div>
+									<!-- end provider npi -->
+									<!-- start provider dea -->
+									<div class="span3 unit">
+										<div class="input">
+											<input type="text" placeholder="DEA" id="provider-dea" name="provider_dea">
+											<span class="tooltip tooltip-right-top">This should be at least 2 letters 6 numbers & 1 check digit.</span>
+										</div>
+									</div>
+									<!-- end provider dea-->
+									<!-- start provider state license -->
+									<div class="span3 unit">
+										<div class="input">
+											<input type="text" placeholder="State License #" id="provider-state-license" name="provider_state_license">
+											<span class="tooltip tooltip-right-top">This should be at least 6 characters.</span>
+										</div>
+									</div>
+									<!-- end provider state license -->
+								</div>
+								<div class="j-row">
+									<!-- start provider medicaid number -->
+									<div class="span3 unit">
+										<div class="input">
+											<input type="text" placeholder="Medicaid Number" id="provider-medicaid-number" name="provider_medicaid_number">
+											<span class="tooltip tooltip-right-top">This should be at least 7 numbers.</span>
+										</div>
+									</div>
+									<!-- end provider medicaid number -->
+									<!-- start provider medicare ptan -->
+									<div class="span3 unit">
+										<div class="input">
+											<input type="text" placeholder="Medicare PTAN" id="provider-medicare-ptan" name="provider_medicare_ptan">
+											<span class="tooltip tooltip-right-top">This should be at least 7 numbers.</span>
+										</div>
+									</div>
+									<!-- end provider medicare ptan -->
+									<!-- start provider rr medicare ptan -->
+									<div class="span3 unit">
+										<div class="input">
+											<input type="text" placeholder="RR Medicare PTAN" id="provider-rr-medicare-ptan" name="provider_rr_medicare_ptan">
+											<span class="tooltip tooltip-right-top">This should be at least 7 numbers.</span>
+										</div>
+									</div>
+									<!-- end provider rr medicare ptan -->
+									<!-- start provider pin -->
+									<div class="span3 unit">
+										<div class="input">
+											<input type="text" placeholder="PIN" id="provider-pin" name="provider_pin">
+											<span class="tooltip tooltip-right-top">This is a four digit number you will use to sign off.</span>
+										</div>
+									</div>
+									<!-- end provider pin -->
+								</div>
+								<div class="j-row">
+									<!-- start provider rendering address -->
+									<div class="span12 unit">
+										<div class="input">
+											<input type="text" placeholder="Rendering Address" name="provider_rendering_address">
+										</div>
+									</div>
+									<!-- end provider rendering address -->
+								</div>
+								<div class="j-row">
+									<!-- start provider city -->
+									<div class="span4 unit">
+										<div class="input">
+											<input type="text" placeholder="City" name="provider_city">
+										</div>
+									</div>
+									<!-- end provider city -->
+									<!-- start provider state -->
+									<div class="span4 unit">
+										<div class="unit">
+											<select>
+												<option selected disabled>
+													Select State
+												</option>
 												<option value="AL">Alabama</option>
 												<option value="AK">Alaska</option>
 												<option value="AZ">Arizona</option>
@@ -500,1001 +724,841 @@
 												<option value="WI">Wisconsin</option>
 												<option value="WY">Wyoming</option>
 											</select>
-											<i></i>
+											<i class="fa fa-sort-desc" aria-hidden="true"></i>
 										</div>
 									</div>
-									<!-- end pay to state -->
-									<!-- start pay to zip -->
-									<div class="span3 unit">
+									<!-- end provider state -->
+									<!-- start provider zip code -->
+									<div class="span4 unit">
 										<div class="input">
-											<input type="text" placeholder="Zip Code" id="pay-to-zip" name="pay_to_zip">
+											<input type="text" placeholder="Zip" id="provider-zip" name="provider_zip">
 										</div>
 									</div>
-									<!-- end pay to zip -->
-									<div class="span3 unit">
-										<div class="input">
-											<input type="text" placeholder="Phone" id="pay-to-phone" name="pay_to_phone">
-										</div>
-									</div>
-									<!-- end pay to zip -->
+									<!-- end provider zip code -->
 								</div>
-								<!-- end pay to -->
-							</fieldset>
-							<!-- End Billing Section -->
-							<!-- Start Providers -->
-							<fieldset>
-								<div class="divider gap-bottom-25"></div>
-								<h2>Instructions</h2>
-								<p class="lead">Please provide the following information for each rendering provider.</p>
-								<div class="divider gap-bottom-25"></div>
-								<div id="animate-clone-users" class="clone-users">
-									<div class="toclone cloneya">
-										<a href="#" class="link clone">Add Another Provider</a>
-										<a href="#" class="link delete">Delete Provider</a>
-										<div class="j-row">
-											<!-- start provider first name -->
-											<div class="span4 unit">
-												<div class="input">
-													<input type="text" placeholder="First Name" name="provider_first_name">
-												</div>
-											</div>
-											<!-- end provider first name -->
-											<!-- start provider middle name -->
-											<div class="span2 unit">
-												<div class="input">
-													<input type="text" placeholder="Middle" name="provider_middle_name">
-												</div>
-											</div>
-											<!-- end provider middle name -->
-											<!-- start provider last name -->
-											<div class="span4 unit">
-												<div class="input">
-													<input type="email" placeholder="Last Name" name="provider_last_name">
-												</div>
-											</div>
-											<!-- end provider last name -->
-											<!-- start provider suffix -->
-											<div class="span2 unit">
-												<div class="input">
-													<input type="email" placeholder="Suffix" name="provider_suffix">
-												</div>
-											</div>
-											<!-- end provider suffix -->
-										</div>
-										<div class="j-row">
-											<!-- start provider specialty -->
-											<div class="span3 unit">
-												<div class="input">
-													<input type="text" placeholder="Specialty or Taxonomy" name="provider_specialty">
-												</div>
-											</div>
-											<!-- end provider specialty -->
-											<!-- start provider npi -->
-											<div class="span3 unit">
-												<div class="input">
-													<input type="text" placeholder="NPI" id="provider-npi" name="provider_npi">
-													<span class="tooltip tooltip-right-top">This should be 10 numbers.</span>
-												</div>
-											</div>
-											<!-- end provider npi -->
-											<!-- start provider dea -->
-											<div class="span3 unit">
-												<div class="input">
-													<input type="text" placeholder="DEA" id="provider-dea" name="provider_dea">
-													<span class="tooltip tooltip-right-top">This should be at least 2 letters 6 numbers & 1 check digit.</span>
-												</div>
-											</div>
-											<!-- end provider dea-->
-											<!-- start provider state license -->
-											<div class="span3 unit">
-												<div class="input">
-													<input type="text" placeholder="State License #" id="provider-state-license" name="provider_state_license">
-													<span class="tooltip tooltip-right-top">This should be at least 6 characters.</span>
-												</div>
-											</div>
-											<!-- end provider state license -->
-										</div>
-										<div class="j-row">
-											<!-- start provider medicaid number -->
-											<div class="span3 unit">
-												<div class="input">
-													<input type="text" placeholder="Medicaid Number" id="provider-medicaid-number" name="provider_medicaid_number">
-													<span class="tooltip tooltip-right-top">This should be at least 7 numbers.</span>
-												</div>
-											</div>
-											<!-- end provider medicaid number -->
-											<!-- start provider medicare ptan -->
-											<div class="span3 unit">
-												<div class="input">
-													<input type="text" placeholder="Medicaid PTAN" id="provider-medicare-ptan" name="provider_medicare_ptan">
-													<span class="tooltip tooltip-right-top">This should be at least 7 numbers.</span>
-												</div>
-											</div>
-											<!-- end provider medicare ptan -->
-											<!-- start provider rr medicare ptan -->
-											<div class="span3 unit">
-												<div class="input">
-													<input type="text" placeholder="RR Medicare PTAN" id="provider-rr-medicare-ptan" name="provider_rr_medicare_ptan">
-													<span class="tooltip tooltip-right-top">This should be at least 7 numbers.</span>
-												</div>
-											</div>
-											<!-- end provider rr medicare ptan -->
-											<!-- start provider pin -->
-											<div class="span3 unit">
-												<div class="input">
-													<input type="text" placeholder="PIN" id="provider-pin" name="provider_pin">
-													<span class="tooltip tooltip-right-top">This is a four digit number you will use to sign off.</span>
-												</div>
-											</div>
-											<!-- end provider pin -->
-										</div>
-										<div class="j-row">
-											<!-- start provider rendering address -->
-											<div class="span12 unit">
-												<div class="input">
-													<input type="text" placeholder="Rendering Address" name="provider_rendering_address">
-												</div>
-											</div>
-											<!-- end provider rendering address -->
-										</div>
-										<div class="j-row">
-											<!-- start provider city -->
-											<div class="span4 unit">
-												<div class="input">
-													<input type="text" placeholder="City" name="provider_city">
-												</div>
-											</div>
-											<!-- end provider city -->
-											<!-- start provider state -->
-											<div class="span4 unit">
-												<div class="unit">
-													<label class="input select">
-														<select autocomplete="off" multiple="" id="provider-state">
-															<option value="AL">Alabama</option>
-															<option value="AK">Alaska</option>
-															<option value="AZ">Arizona</option>
-															<option value="AR">Arkansas</option>
-															<option value="CA">California</option>
-															<option value="CO">Colorado</option>
-															<option value="CT">Connecticut</option>
-															<option value="DE">Delaware</option>
-															<option value="DC">District Of Columbia</option>
-															<option value="FL">Florida</option>
-															<option value="GA">Georgia</option>
-															<option value="HI">Hawaii</option>
-															<option value="ID">Idaho</option>
-															<option value="IL">Illinois</option>
-															<option value="IN">Indiana</option>
-															<option value="IA">Iowa</option>
-															<option value="KS">Kansas</option>
-															<option value="KY">Kentucky</option>
-															<option value="LA">Louisiana</option>
-															<option value="ME">Maine</option>
-															<option value="MD">Maryland</option>
-															<option value="MA">Massachusetts</option>
-															<option value="MI">Michigan</option>
-															<option value="MN">Minnesota</option>
-															<option value="MS">Mississippi</option>
-															<option value="MO">Missouri</option>
-															<option value="MT">Montana</option>
-															<option value="NE">Nebraska</option>
-															<option value="NV">Nevada</option>
-															<option value="NH">New Hampshire</option>
-															<option value="NJ">New Jersey</option>
-															<option value="NM">New Mexico</option>
-															<option value="NY">New York</option>
-															<option value="NC">North Carolina</option>
-															<option value="ND">North Dakota</option>
-															<option value="OH">Ohio</option>
-															<option value="OK">Oklahoma</option>
-															<option value="OR">Oregon</option>
-															<option value="PA">Pennsylvania</option>
-															<option value="RI">Rhode Island</option>
-															<option value="SC">South Carolina</option>
-															<option value="SD">South Dakota</option>
-															<option value="TN">Tennessee</option>
-															<option value="TX">Texas</option>
-															<option value="UT">Utah</option>
-															<option value="VT">Vermont</option>
-															<option value="VA">Virginia</option>
-															<option value="WA">Washington</option>
-															<option value="WV">West Virginia</option>
-															<option value="WI">Wisconsin</option>
-															<option value="WY">Wyoming</option>
-														</select>
-														<i></i>
-													</div>
-												</div>
-												<!-- end provider state -->
-												<!-- start provider zip code -->
-												<div class="span4 unit">
-													<div class="input">
-														<input type="text" placeholder="Zip" id="provider-zip" name="provider_zip">
-													</div>
-												</div>
-												<!-- end provider zip code -->
-											</div>
-											<div class="j-row">
-												<!-- start provider practice phone -->
-												<div class="span6 unit">
-													<input type="text" placeholder="Practice Phone" id="provider-practice-phone" name="provider_practice_phone">
-												</div>
-												<!-- end provider pracice phone -->
-												<!-- start provider practice fax -->
-												<div class="span6 unit">
-													<input type="text" placeholder="Practice Fax" id="provider-practice-fax" name="provider_practice_fax">
-												</div>
-												<!-- end provider practice fax -->
-											</div>
-											<div class="j-row">
-												<!-- start provider meaningful use -->
-												<div class="span4 unit">
-													<div class="unit">
-														<label class="input select">
-															<select autocomplete="off" multiple="" id="provider-mu">
-																<option value="yes">Yes</option>
-																<option value="no">No</option>
-															</select>
-															<i></i>
-														</label>
-													</div>
-												</div>
-												<!-- end provider meaningful use -->
-												<!-- start provider medicare or medicaid -->
-												<div class="span4 unit">
-													<div class="unit">
-														<label class="input select">
-															<select autocomplete="off" multiple="" id="provider-medicaid">
-																<option value="medicare">Medicare</option>
-																<option value="medicaid">Medicaid</option>
-															</select>
-															<i></i>
-														</label>
-													</div>
-												</div>
-												<!-- end provider medicare or medicaid -->
-												<!-- start provider stage -->
-												<div class="span4 unit">
-													<div class="unit">
-														<label class="input select">
-															<select autocomplete="off" multiple="" id="provider-stage">
-																<option value="stage 1">Stage 1</option>
-																<option value="stage 2">Stage 2</option>
-																<option value="stage 3">Stage 3</option>
-															</select>
-															<i></i>
-														</label>
-													</div>
-												</div>
-												<!-- end provider stage -->
-											</div>
-											<div class="j-row">
-												<!-- start provider cms -->
-												<div class="span4 unit">
-													<input type="checkbox" name="provider_cms" value="yes">I Would like to stay up to date with CMS News
-												</div>
-												<!-- end provider cms -->
-											</div>
-											<div class="divider gap-bottom-25"></div>
-											<!-- start provider schedule -->
-											<h2>Provider Schedule</h2>
-											<p class="lead">Please add the schedule information for each resource. A resource is how iSALUS' OfficeEMR™ ties a schedule to a specific provider. If a resource has different schedules based on the week, please add a line for each week’s schedule.
-												Also, if a day may have variable times, please list the earliest start and latest end time you would like for the schedule to show.</p>
-											<div class="divider gap-bottom-25"></div>
-
-											<div id="schedule">
-												<div class="j-row">
-													<!-- start schedule resource -->
-													<div class="span2 unit"><input type="text" placeholder="Day of Week" disabled></div>
-													<div class="span2 unit"><input type="text" placeholder="Hours" disabled></div>
-													<div class="span2 unit"><input type="text" placeholder="Lunch" disabled></div>
-													<div class="span6 unit"><input type="text" placeholder="Location" disabled></div>
-
-													<!-- end schedule resource -->
-												</div>
-												<div class="j-row">
-													<!-- start schedule hours -->
-													<div class="span2 unit"><input type="text" placeholder="Sunday" disabled></div>
-													<div class="span2 unit"><input name="provider_hours_sunday" type="text" placeholder="i.e. 9am - 5pm"></div>
-													<div class="span2 unit"><input name="provider_hours_monday" type="text"></div>
-													<div class="span6 unit"><input name="provider_hours_tuesday" type="text"></div>
-													<!-- end schedule hours -->
-												</div>
-												<div class="j-row">
-													<!-- start schedule location -->
-													<div class="span2 unit"><input type="text" placeholder="Monday" disabled></div>
-													<div class="span2 unit"><input name="provider_hours_sunday" type="text" placeholder="i.e. 9am - 5pm"></div>
-													<div class="span2 unit"><input name="provider_hours_monday" type="text"></div>
-													<div class="span6 unit"><input name="provider_hours_tuesday" type="text"></div>
-													<!-- end schedule location -->
-												</div>
-												<div class="j-row">
-													<!-- start schedule lunch -->
-													<div class="span2 unit"><input type="text" placeholder="Tuesday" disabled></div>
-													<div class="span2 unit"><input name="provider_hours_sunday" type="text" placeholder="i.e. 9am - 5pm"></div>
-													<div class="span2 unit"><input name="provider_hours_monday" type="text"></div>
-													<div class="span6 unit"><input name="provider_hours_tuesday" type="text"></div>
-													<!-- end schedule lunch -->
-												</div>
-												<div class="j-row">
-													<!-- start schedule meeting -->
-													<div class="span2 unit"><input type="text" placeholder="Wednesday" disabled></div>
-													<div class="span2 unit"><input name="provider_hours_sunday" type="text" placeholder="i.e. 9am - 5pm"></div>
-													<div class="span2 unit"><input name="provider_hours_monday" type="text"></div>
-													<div class="span6 unit"><input name="provider_hours_tuesday" type="text"></div>
-													<!-- end schedule meeting -->
-												</div>
-												<div class="j-row">
-													<!-- start schedule comments -->
-													<div class="span2 unit"><input type="text" placeholder="Thursday" disabled></div>
-													<div class="span2 unit"><input name="provider_hours_sunday" type="text" placeholder="i.e. 9am - 5pm"></div>
-													<div class="span2 unit"><input name="provider_hours_monday" type="text"></div>
-													<div class="span6 unit"><input name="provider_hours_tuesday" type="text"></div>
-													<!-- end schedule comments -->
-												</div>
-												<div class="j-row">
-													<!-- start schedule comments -->
-													<div class="span2 unit"><input type="text" placeholder="Friday" disabled></div>
-													<div class="span2 unit"><input name="provider_hours_sunday" type="text" placeholder="i.e. 9am - 5pm"></div>
-													<div class="span2 unit"><input name="provider_hours_monday" type="text"></div>
-													<div class="span6 unit"><input name="provider_hours_tuesday" type="text"></div>
-													<!-- end schedule comments -->
-												</div>
-												<div class="j-row">
-													<!-- start schedule comments -->
-													<div class="span2 unit"><input type="text" placeholder="Saturday" disabled></div>
-													<div class="span2 unit"><input name="provider_hours_sunday" type="text" placeholder="i.e. 9am - 5pm"></div>
-													<div class="span2 unit"><input name="provider_hours_monday" type="text"></div>
-													<div class="span6 unit"><input name="provider_hours_tuesday" type="text"></div>
-													<!-- end schedule comments -->
-												</div>
-											</div>
-										</div>
+								<div class="j-row">
+									<!-- start provider practice phone -->
+									<div class="span6 unit">
+										<input type="text" placeholder="Practice Phone" id="provider-practice-phone" name="provider_practice_phone">
 									</div>
-									<!-- end /.toclone -->
-								</fieldset>
-								<!-- End Providers -->
-								<!-- Start Users -->
-								<fieldset>
-									<div class="divider gap-bottom-25"></div>
-									<h2>Instructions</h2>
-									<p class="lead">Please provide a list of users and indicate appropriate roles of that user within your practice. A user is anyone who will need to log into your database.</p>
-									<div class="divider gap-bottom-25"></div>
-									<div id="animate-clone-users" class="clone-users">
-										<div class="toclone cloneya">
-											<a href="#" class="link clone">Add Another User</a>
-											<a href="#" class="link delete">Delete User</a>
-											<div class="j-row">
-												<!-- start user first name -->
-												<div class="span4 unit">
-													<div class="input">
-														<input type="text" placeholder="First Name" name="user_first_name">
-													</div>
-												</div>
-												<!-- end user first name -->
-												<!-- start user last name -->
-												<div class="span4 unit">
-													<div class="input">
-														<input type="text" placeholder="Last Name" name="user_last_name">
-													</div>
-												</div>
-												<!-- end user last name -->
-												<!-- start user email -->
-												<div class="span4 unit">
-													<div class="input">
-														<input type="email" placeholder="Email" name="user_email">
-													</div>
-												</div>
-											</div>
-											<!-- end user email -->
-											<!-- start user role admin -->
-											<div class="j-row">
-												<div class="span2 unit">
-													<label class="checkbox">
-														<input value="admin" type="checkbox" id="user-admin" name="user_admin">
-														<i title="Full access to all functions of the system."></i>
-														Admin
-													</label>
-												</div>
-												<!-- end user role admin -->
-												<!-- start user role ancillary -->
-												<div class="span2 unit">
-													<label class="checkbox">
-														<input value="ancillary" type="checkbox" name="user_ancillary">
-														<i title="Partial access to the clinical chart, no ability to sign notes or send prescriptions."></i>
-														Ancillary
-													</label>
-												</div>
-												<!-- end user role ancillary -->
-												<!-- start user role billing -->
-												<div class="span2 unit">
-													<label class="checkbox">
-														<input value="billing" type="checkbox" name="user_billing">
-														<i title="Full access to practice financials."></i>
-														Billing
-													</label>
-												</div>
-												<!-- end user role billing -->
-												<!-- start user role front office -->
-												<div class="span2 unit">
-													<label class="checkbox">
-														<input value="front office" type="checkbox" name="user_front_office">
-														<i title="Full access to the scheduler and patient balances"></i>
-														Front Office
-													</label>
-												</div>
-												<!-- end user role front office -->
-												<!-- start user role provider -->
-												<div class="span2 unit">
-													<label class="checkbox">
-														<input value="provider" type="checkbox" name="user_provider">
-														<i title="Full access to the clinical chart, with ability to sign notes and send prescriptions"></i>
-														Provider
-													</label>
-												</div>
-												<!-- end user role provider -->
-											</div>
-										</div>
+									<!-- end provider pracice phone -->
+									<!-- start provider practice fax -->
+									<div class="span6 unit">
+										<input type="text" placeholder="Practice Fax" id="provider-practice-fax" name="provider_practice_fax">
 									</div>
-								</fieldset>
-								<!-- End Users -->
-								<!-- Start Locations -->
-								<fieldset>
-									<div class="divider gap-bottom-25"></div>
-									<h2>Instructions</h2>
-									<p class="lead">Please fill out the following information for all service locations (clinics, hospitals,off-site,etc.) associated with appointments and claims.</p>
-									<div class="divider gap-bottom-25"></div>
-									<div id="animate-clone-locations" class="clone-locations">
-										<div class="toclone cloneya">
-											<a href="#" class="link clone">Add Another Location</a>
-											<a href="#" class="link delete">Delete Location</a>
-											<div class="j-row">
-												<!-- start location name -->
-												<div class="span12 unit">
-													<div class="input">
-														<input type="text" placeholder="Name" name="location_name">
-													</div>
-												</div>
-												<!-- end location name -->
-											</div>
-											<div class="j-row">
-												<!-- start location pos -->
-												<div class="span4 unit">
-													<div class="unit">
-														<label class="input select">
-															<select autocomplete="off" multiple="" id="location-pos">
-																<option value="01 Pharmacy">01 Pharmacy</option>
-																<option value="03 School">03 School</option>
-																<option value="04 Homeless Shelter">04 Homeless Shelter</option>
-																<option value="05 Indian Health Service Free-Standing Facility">05 Indian Health Service Free-Standing Facility</option>
-																<option value="06 Indian Health Service Provider-based Facility">06 Indian Health Service Provider-based Facility</option>
-																<option value="07 Tribal 638 Provider-based Facility">07 Tribal 638 Provider-based Facility</option>
-																<option value="08 Tribal 638 Provider-based Facility">08 Tribal 638 Provider-based Facility</option>
-																<option value="09 Prison/Correctional Facility">09 Prison/Correctional Facility</option>
-																<option value="11 Office">11 Office</option>
-																<option value="12 Home">12 Home</option>
-																<option value="13 Assisted Living Facility">13 Assisted Living Facility</option>
-																<option value="14 Group Home">14 Group Home</option>
-																<option value="15 Mobile Unit">15 Mobile Unit</option>
-																<option value="20 Urgent Care">20 Urgent Care</option>
-																<option value="21 IP Hosp">21 IP Hosp</option>
-																<option value="22 OP Hosp">22 OP Hosp</option>
-																<option value="23 ER Hosp">23 ER Hosp</option>
-																<option value="24 Amb Surg Ctr">24 Amb Surg Ctr</option>
-																<option value="25 Birthing Ctr">25 Birthing Ctr</option>
-																<option value="26 Military Trtmnt Fac">26 Military Trtmnt Fac</option>
-																<option value="31 Skilled Nur Fac">31 Skilled Nur Fac</option>
-																<option value="32 Nur Fac">32 Nur Fac</option>
-																<option value="33 Cust Care Fac">33 Cust Care Fac</option>
-																<option value="34 Hospice">34 Hospice</option>
-																<option value="41 Amb - Land">41 Amb - Land</option>
-																<option value="42 Amb - Air/Water">42 Amb - Air/Water</option>
-																<option value="49 Independent Clinic">49 Independent Clinic</option>
-																<option value="50 Fed Qual Hlth Ctr">50 Fed Qual Hlth Ctr</option>
-																<option value="51 IP Psy Fac">51 IP Psy Fac</option>
-																<option value="52 Psy Fac Prtl Hosp">52 Psy Fac Prtl Hosp</option>
-																<option value="53 Comm Ment Hlth Ctr">53 Comm Ment Hlth Ctr</option>
-																<option value="54 Intmed Care Fac/Ment Ret">54 Intmed Care Fac/Ment Ret</option>
-																<option value="55 Res Sub Abuse Trmt Fac">55 Res Sub Abuse Trmt Fac</option>
-																<option value="56 Psy Red Trmnt Ctr">56 Psy Red Trmnt Ctr</option>
-																<option value="57 Non-residential Sub Abu Trmnt Fac">57 Non-residential Sub Abu Trmnt Fac</option>
-																<option value="60 Mass Immun Ctr">60 Mass Immun Ctr</option>
-																<option value="61 Comp IP Rehab Fac">61 Comp IP Rehab Fac</option>
-																<option value="62 Comp OP Rehab Fac">62 Comp OP Rehab Fac</option>
-																<option value="65 ESRD Trtmnt Fac">65 ESRD Trtmnt Fac</option>
-																<option value="71 St/Loc Pub Hlth Clnc">71 St/Loc Pub Hlth Clnc</option>
-																<option value="81 Ind Lab">81 Ind Lab</option>
-																<option value="99 Other Uncl Fac">99 Other Uncl Fac</option>
-															</select>
-															<i></i>
-														</div>
-													</div>
-													<!-- start location phone -->
-													<div class="span4 unit">
-														<div class="input">
-															<input type="email" placeholder="Phone" id="location-phone" name="location_phone">
-														</div>
-													</div>
-													<!-- end location phone  -->
-													<!-- start location fax -->
-													<div class="span4 unit">
-														<div class="input">
-															<input type="text" placeholder="Fax" name="location_fax" id="location-fax">
-														</div>
-													</div>
-													<!-- end location fax -->
-												</div>
-												<div class="j-row">
-													<!-- start location address -->
-													<div class="span12 unit">
-														<div class="input">
-															<input type="text" placeholder="Address" name="location_address">
-														</div>
-													</div>
-													<!-- end location address -->
-												</div>
-												<div class="j-row">
-													<!-- start location city -->
-													<div class="span4 unit">
-														<div class="input">
-															<input type="text" placeholder="City" name="location_city">
-														</div>
-													</div>
-													<!-- end location city -->
-													<!-- start location state -->
-													<div class="span4 unit">
-														<div class="unit">
-															<label class="input select">
-																<select autocomplete="off" multiple="" id="location-state">
-																	<option value="AL">Alabama</option>
-																	<option value="AK">Alaska</option>
-																	<option value="AZ">Arizona</option>
-																	<option value="AR">Arkansas</option>
-																	<option value="CA">California</option>
-																	<option value="CO">Colorado</option>
-																	<option value="CT">Connecticut</option>
-																	<option value="DE">Delaware</option>
-																	<option value="DC">District Of Columbia</option>
-																	<option value="FL">Florida</option>
-																	<option value="GA">Georgia</option>
-																	<option value="HI">Hawaii</option>
-																	<option value="ID">Idaho</option>
-																	<option value="IL">Illinois</option>
-																	<option value="IN">Indiana</option>
-																	<option value="IA">Iowa</option>
-																	<option value="KS">Kansas</option>
-																	<option value="KY">Kentucky</option>
-																	<option value="LA">Louisiana</option>
-																	<option value="ME">Maine</option>
-																	<option value="MD">Maryland</option>
-																	<option value="MA">Massachusetts</option>
-																	<option value="MI">Michigan</option>
-																	<option value="MN">Minnesota</option>
-																	<option value="MS">Mississippi</option>
-																	<option value="MO">Missouri</option>
-																	<option value="MT">Montana</option>
-																	<option value="NE">Nebraska</option>
-																	<option value="NV">Nevada</option>
-																	<option value="NH">New Hampshire</option>
-																	<option value="NJ">New Jersey</option>
-																	<option value="NM">New Mexico</option>
-																	<option value="NY">New York</option>
-																	<option value="NC">North Carolina</option>
-																	<option value="ND">North Dakota</option>
-																	<option value="OH">Ohio</option>
-																	<option value="OK">Oklahoma</option>
-																	<option value="OR">Oregon</option>
-																	<option value="PA">Pennsylvania</option>
-																	<option value="RI">Rhode Island</option>
-																	<option value="SC">South Carolina</option>
-																	<option value="SD">South Dakota</option>
-																	<option value="TN">Tennessee</option>
-																	<option value="TX">Texas</option>
-																	<option value="UT">Utah</option>
-																	<option value="VT">Vermont</option>
-																	<option value="VA">Virginia</option>
-																	<option value="WA">Washington</option>
-																	<option value="WV">West Virginia</option>
-																	<option value="WI">Wisconsin</option>
-																	<option value="WY">Wyoming</option>
-																</select>
-																<i></i>
-															</div>
-														</div>
-														<!-- end location state -->
-														<!-- start location zip -->
-														<div class="span4 unit">
-															<div class="input">
-																<input type="text" placeholder="Zip" id="location-zip" name="location_zip">
-															</div>
-														</div>
-														<!-- end location zip -->
-													</div>
-												</div>
-											</div>
-										</fieldset>
-										<!-- End Locations -->
-										<!-- start appointment types -->
-										<fieldset>
-											<div class="divider gap-bottom-25"></div>
-											<h2>Instructions</h2>
-											<p class="lead">Please provide a list of appointment types.</p>
-											<div class="divider gap-bottom-25"></div>
-											<div id="animate-clone-appts" class="clone-appts">
-												<div class="toclone cloneya">
-													<a href="#" class="link clone">Add Another Appointment Type</a>
-													<a href="#" class="link delete">Delete Appointment Type</a>
-													<div class="j-row">
-														<div class="span4 unit">
-															<div class="input">
-																<input type="text" placeholder="Appointment Type" name="appointment_type">
-															</div>
-														</div>
-														<div class="span4 unit">
-															<div class="input">
-																<input type="text" placeholder="Duration (mins)" name="appointment_duration">
-															</div>
-														</div>
-														<div class="span3 unit">
-															<div class="input">
-																<input type="text" placeholder="Assosicated Resource/s" name="appointment_resource">
-															</div>
-														</div>
-														<div class="span1 unit">
-															<label class="checkbox">
-																<input value="all" type="checkbox" name="appointment_resource_all">
-																<i></i>
-																All
-															</label>
-														</div>
-													</div>
-												</div>
-											</div>
-										</fieldset>
-										<!-- end appointment types -->
-										<!-- Start Payers -->
-										<fieldset>
-											<div class="divider gap-bottom-25"></div>
-											<h2>Instructions</h2>
-											<p class="lead">Please fill out the following information for the practice’s most common payers. The address column should be the address where claims are sent. Place a ‘Y’ in the eClaims column if you plan to send claims electronically for this
-												payer. Place a ‘Y’ in the ERA columns if you would like to receive electronic EOB’s.</p>
-											<div class="divider gap-bottom-25"></div>
-											<div class="j-row">
-												<div class="span6 unit">
-													<label class="checkbox">
-														<input value="Load common payers in my state" type="checkbox" name="appointment_resource_all">
-														<i></i>
-														Load common payers in my state
-													</label>
-												</div>
-											</div>
-											<div class="divider gap-bottom-25"></div>
-											<div id="animate-clone-payers" class="clone-payers">
-												<div class="toclone cloneya">
-													<a href="#" class="link clone">Add Another Payer</a>
-													<a href="#" class="link delete">Delete Payer</a>
-													<div class="j-row">
-														<!-- start payer name -->
-														<div class="span12 unit">
-															<div class="input">
-																<input type="text" placeholder="Payer Name" name="payer_name">
-															</div>
-														</div>
-														<!-- end payer name -->
-													</div>
-													<div class="j-row">
-														<!-- payer address -->
-														<div class="span12 unit">
-															<div class="input">
-																<input type="text" placeholder="Address" name="payer_address">
-															</div>
-														</div>
-														<!-- end payer address -->
-													</div>
-													<div class="j-row">
-														<!-- start payer ID -->
-														<div class="span4 unit">
-															<div class="input">
-																<input type="email" placeholder="Payer ID" name="payer_id">
-															</div>
-														</div>
-														<!-- end payer ID -->
-														<!-- start eclaims -->
-														<div class="span4 unit">
-															<div class="unit">
-																<label class="input select">
-																	<select autocomplete="off" multiple="" id="payer-eclaims">
-																		<option value="0">Yes</option>
-																		<option value="1">No</option>
-																	</select>
-																	<i></i>
-																</label>
-															</div>
-														</div>
-														<!-- end eclaims -->
-														<!-- start era -->
-														<div class="span4 unit">
-															<div class="unit">
-																<label class="input select">
-																	<select autocomplete="off" multiple="" id="payer-era">
-																		<option value="0">Yes</option>
-																		<option value="1">No</option>
-																	</select>
-																	<i></i>
-																</label>
-															</div>
-														</div>
-														<!-- end era -->
-													</div>
-												</div>
-											</div>
-										</fieldset>
-										<!-- End Payers -->
-										<!-- Start Additional Services -->
-										<fieldset>
-											<div class="divider gap-bottom-25"></div>
-											<div class="j-row">
-												<div class="span4 unit">
-													<h2>
-														<font style="color: #0072cb">100</font>
-														Free Automated Appointment Reminders</h2>
-													<p class="lead">Now you can increase your practice's revenues and improve patient attendance rates by sending email, text and phone call appointment reminders to your patients. It's simple. For just $0.10 each, you can now efficiently and effectively
-														send friendly reminders to your patients. There are no setup fees, no long-term contracts or cancellation penalties. Simply pay as you go for whatever you use.<br>
-														<b>Your first 100 reminders are on us if you sign-up now!</b>
-													</p>
-													<button style="float:left; margin-left: 0px;" class="primary-btn left">
-														<a class="typeform-share" href="https://iSALUShealthcare.typeform.com/to/b95EDU" data-mode="1" target="_blank">Sign Up Today!</a>
-													</button>
-													<script>
-														(function () {
-															var qs,
-																js,
-																q,
-																s,
-																d = document,
-																gi = d.getElementById,
-																ce = d.createElement,
-																gt = d.getElementsByTagName,
-																id = 'typef_orm',
-																b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
-															if (!gi.call(d, id)) {
-																js = ce.call(d, 'script');
-																js.id = id;
-																js.src = b + 'share.js';
-																q = gt.call(d, 'script')[0];
-																q.parentNode.insertBefore(js, q)
-															}
-															id = id + '_';
-															if (!gi.call(d, id)) {
-																qs = ce.call(d, 'link');
-																qs.rel = 'stylesheet';
-																qs.id = id;
-																qs.href = b + 'share-button.css';
-																s = gt.call(d, 'head')[0];
-																s.appendChild(qs, s)
-															}
-														})()
-													</script>
-												</div>
-												<div class="span4 unit">
-													<h2>
-														<font style="color: #0072cb">100</font>
-														Free Electronic Statements</h2>
-													<p class="lead">Increase your office productivity and automate your AR process! Electronic statements offers you the ability to have your statements automatically printed, put in an envelope, postage added, and sent to your patient’s home with just a
-														few clicks! The best part about this service is that it only costs $0.78 per statement and this INCLUDES postage which is typically $0.49 by itself.<br>
-														<b>We are so confident that you will love your automated statements, that we will pay for the first 100.</b>
-													</p>
-													<button style="float:left; margin-left: 0px;" class="primary-btn">
-														<a class="typeform-share" href="https://iSALUShealthcare.typeform.com/to/lzHCJ9" data-mode="1" target="_blank">Sign Up Today!</a>
-													</button>
-													<script>
-														(function () {
-															var qs,
-																js,
-																q,
-																s,
-																d = document,
-																gi = d.getElementById,
-																ce = d.createElement,
-																gt = d.getElementsByTagName,
-																id = 'typef_orm',
-																b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
-															if (!gi.call(d, id)) {
-																js = ce.call(d, 'script');
-																js.id = id;
-																js.src = b + 'share.js';
-																q = gt.call(d, 'script')[0];
-																q.parentNode.insertBefore(js, q)
-															}
-															id = id + '_';
-															if (!gi.call(d, id)) {
-																qs = ce.call(d, 'link');
-																qs.rel = 'stylesheet';
-																qs.id = id;
-																qs.href = b + 'share-button.css';
-																s = gt.call(d, 'head')[0];
-																s.appendChild(qs, s)
-															}
-														})()
-													</script>
-												</div>
-												<div class="span4 unit">
-													<h2>
-														<font style="color: #0072cb">100</font>
-														Free Integrated Faxes</h2>
-													<p class="lead">iSALUS' OfficeEMR™ offers you the ability to electronically integrate faxes directly into your EMR. In the effort to help your office go paperless and run more efficiently, we would like to assist you in setting up this amazing
-														service. Essentially, you have the ability to allow both inbound and/ or outbound faxes to be delivered electronically to your office. iSALUS has teamed up with the nationally recognized company j2 / MyFax Corporate to provide this service.<br>
-														<b>Try this service out for free – the first 100 pages you send or receive will cost absolutely nothing!</b>
-													</p>
-													<button style="float:left; margin-left: 0px;" class="primary-btn">
-														<a class="typeform-share" href="https://iSALUShealthcare.typeform.com/to/GBlJIZ" data-mode="1" target="_blank">Sign Up Today!</a>
-													</button>
-													<script>
-														(function () {
-															var qs,
-																js,
-																q,
-																s,
-																d = document,
-																gi = d.getElementById,
-																ce = d.createElement,
-																gt = d.getElementsByTagName,
-																id = 'typef_orm',
-																b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
-															if (!gi.call(d, id)) {
-																js = ce.call(d, 'script');
-																js.id = id;
-																js.src = b + 'share.js';
-																q = gt.call(d, 'script')[0];
-																q.parentNode.insertBefore(js, q)
-															}
-															id = id + '_';
-															if (!gi.call(d, id)) {
-																qs = ce.call(d, 'link');
-																qs.rel = 'stylesheet';
-																qs.id = id;
-																qs.href = b + 'share-button.css';
-																s = gt.call(d, 'head')[0];
-																s.appendChild(qs, s)
-															}
-														})()
-													</script>
-												</div>
-											</div>
-										</fieldset>
-										<!-- End Additional Services -->
-										<!-- Start Documents -->
-										<fieldset>
-											<div class="divider gap-bottom-25"></div>
-											<h2>Instructions</h2>
-											<p class="lead">Please provide the following documents to iSALUS Healthcare. You may attach them to the email when you return this document, or fax them to us at (317)536-3978.</p>
-											<div class="divider gap-bottom-25"></div>
-											<h2>Billing</h2>
-											<div class="j-row">
-												<!-- start upload fee schedule -->
-												<div class="span6 unit">
-													<label class="input append-small-btn">
-														<div class="file-button">
-															Browse
-															<input type="file" name="fee_schedule" onchange="document.getElementById('fee_schedule_input').value = this.value;">
-														</div>
-														<input type="text" id="fee_schedule_input" readonly="" placeholder="Fee Schedule">
-													</label>
-												</div>
-												<!-- end upload fee schedule -->
-												<!-- start upload superbill -->
-												<div class="span6 unit">
-													<label class="input append-small-btn">
-														<div class="file-button">
-															Browse
-															<input type="file" name="superbill" onchange="document.getElementById('superbill_input').value = this.value;">
-														</div>
-														<input type="text" id="superbill_input" readonly="" placeholder="Superbill">
-													</label>
-												</div>
-												<!-- end upload superbill -->
-											</div>
-											<div class="divider gap-bottom-25"></div>
-											<h2>EMR</h2>
-											<div class="j-row">
-												<!-- start upload practice logo -->
-												<div class="span6 unit">
-													<label class="input append-small-btn">
-														<div class="file-button">
-															Browse
-															<input type="file" name="practice_logo" onchange="document.getElementById('practice_logo_input').value = this.value;">
-														</div>
-														<input type="text" id="practice_logo_input" readonly="" placeholder="Practice Logo">
-													</label>
-												</div>
-												<!-- end upload practice logo -->
-												<!-- start upload letterhead -->
-												<div class="span6 unit">
-													<label class="input append-small-btn">
-														<div class="file-button">
-															Browse
-															<input type="file" name="letterhead" onchange="document.getElementById('letterhead_input').value = this.value;">
-														</div>
-														<input type="text" id="letterhead_input" readonly="" placeholder="Letterhead">
-													</label>
-												</div>
-												<!-- end upload letterhead -->
-											</div>
-											<div class="j-row">
-												<!-- start upload templates -->
-												<div class="span6 unit">
-													<label class="input append-small-btn">
-														<div class="file-button">
-															Browse
-															<input type="file" name="templates" onchange="document.getElementById('templates_input').value = this.value;">
-														</div>
-														<input type="text" id="templates_input" readonly="" placeholder="Templates">
-													</label>
-												</div>
-												<!-- end upload templates -->
-												<!-- start upload other -->
-												<div class="span6 unit">
-													<label class="input append-small-btn">
-														<div class="file-button">
-															Browse
-															<input type="file" name="other" onchange="document.getElementById('other_input').value = this.value;">
-														</div>
-														<input type="text" id="other_input" readonly="" placeholder="Other">
-													</label>
-												</div>
-												<!-- end upload other -->
-											</div>
-											<div id="animate-clone-documents" class="clone-documents">
-												<div class="divider gap-bottom-25"></div>
-												<h2>Additional Documents</h2>
-												<div class="toclone cloneya">
-
-													<a href="#" class="link clone">Add Additional Documents</a>
-													<a href="#" class="link delete">Remove Additional Documents</a>
-													<div class="j-row">
-														<!-- start upload fee schedule -->
-														<div class="span6 unit">
-															<label class="input append-small-btn">
-																<div class="file-button">
-																	Browse
-																	<input type="file" name="additional_document_1" onchange="document.getElementById('fee_schedule_input').value = this.value;">
-																</div>
-																<input type="text" id="additonal-document-1" readonly="" placeholder="Additional Document">
-															</label>
-														</div>
-														<!-- end upload fee schedule -->
-														<!-- start upload superbill -->
-														<div class="span6 unit">
-															<label class="input append-small-btn">
-																<div class="file-button">
-																	Browse
-																	<input type="file" name="additional_document_2" onchange="document.getElementById('superbill_input').value = this.value;">
-																</div>
-																<input type="text" id="additonal-document-2" readonly="" placeholder="Additional Document">
-															</label>
-														</div>
-														<!-- end upload superbill -->
-													</div>
-												</div>
-											</div>
-											<button type="reset" class="tertiary-btn">Clear Documents</button>
-										</fieldset>
-										<!-- End Documents -->
-
-										<!-- end files -->
-
-									</div>
-									<!-- end /.content -->
-
-									<div class="footer"><button t <button type="submit" class="primary-btn multi-submit-btn">Send</button>
-									<button type="button" class="primary-btn multi-next-btn">Next</button>
-									<button type="button" class="primary-btn multi-prev-btn">Back</button>
-									<button style="float:left; margin-left: 0px;" class="primary-btn">Save Progress</button>
+									<!-- end provider practice fax -->
 								</div>
-								<!-- end /.footer -->
-							</form>
+								<div class="j-row">
+									<!-- start provider meaningful use -->
+									<div class="span4 unit">
+										<div class="unit">
+											<select>
+												<option selected disabled>
+													Would you like to achieve Meaningful Use?
+												</option>
+												<option value="yes">Yes</option>
+												<option value="no">No</option>
+											</select>
+											<i class="fa fa-sort-desc" aria-hidden="true"></i>
+										</div>
+									</div>
+									<!-- end provider meaningful use -->
+									<!-- start provider medicare or medicaid -->
+									<div class="span4 unit">
+										<div class="unit">
+											<select>
+												<option selected disabled>
+													Do you achieve > 30% Medicaid patient volume?
+												</option>
+												<option value="medicare">Medicare</option>
+												<option value="medicaid">Medicaid</option>
+											</select>
+											<i class="fa fa-sort-desc" aria-hidden="true"></i>
+										</div>
+									</div>
+									<!-- end provider medicare or medicaid -->
+									<!-- start provider stage -->
+									<div class="span4 unit">
+										<div class="unit">
+											<select>
+												<option selected disabled>
+													What stage have you attested for?
+												</option>
+												<option value="stage 1">Stage 1</option>
+												<option value="stage 2">Stage 2</option>
+												<option value="stage 3">Stage 3</option>
+											</select>
+											<i class="fa fa-sort-desc" aria-hidden="true"></i>
+										</div>
+									</div>
+									<!-- end provider stage -->
+								</div>
+								<div class="j-row">
+									<!-- start provider cms -->
+									<div class="span4 unit">
+										<input type="checkbox" name="provider_cms" value="yes">I Would like to stay up to date with CMS News
+									</div>
+									<!-- end provider cms -->
+								</div>
+								<div class="divider gap-bottom-25"></div>
+								<!-- start provider schedule -->
+								<h2>Provider Schedule</h2>
+								<p class="lead">Please add the schedule information for each resource. A resource is how iSALUS' OfficeEMR™ ties a schedule to a specific provider. If a resource has different schedules based on the week, please add a line for each week’s schedule.
+									Also, if a day may have variable times, please list the earliest start and latest end time you would like for the schedule to show.</p>
+								<div class="divider gap-bottom-25"></div>
+
+								<div id="schedule">
+									<div class="j-row">
+										<!-- start schedule resource -->
+										<div class="span2 unit"><input type="text" placeholder="Day of Week" disabled></div>
+										<div class="span2 unit"><input type="text" placeholder="Hours" disabled></div>
+										<div class="span2 unit"><input type="text" placeholder="Lunch" disabled></div>
+										<div class="span6 unit"><input type="text" placeholder="Location" disabled></div>
+
+										<!-- end schedule resource -->
+									</div>
+									<div class="j-row">
+										<!-- start schedule hours -->
+										<div class="span2 unit"><input type="text" placeholder="Sunday" disabled></div>
+										<div class="span2 unit"><input name="provider_hours_sunday" type="text" placeholder="i.e. 9am - 5pm"></div>
+										<div class="span2 unit"><input name="provider_hours_monday" type="text"></div>
+										<div class="span6 unit"><input name="provider_hours_tuesday" type="text"></div>
+										<!-- end schedule hours -->
+									</div>
+									<div class="j-row">
+										<!-- start schedule location -->
+										<div class="span2 unit"><input type="text" placeholder="Monday" disabled></div>
+										<div class="span2 unit"><input name="provider_hours_sunday" type="text" placeholder="i.e. 9am - 5pm"></div>
+										<div class="span2 unit"><input name="provider_hours_monday" type="text"></div>
+										<div class="span6 unit"><input name="provider_hours_tuesday" type="text"></div>
+										<!-- end schedule location -->
+									</div>
+									<div class="j-row">
+										<!-- start schedule lunch -->
+										<div class="span2 unit"><input type="text" placeholder="Tuesday" disabled></div>
+										<div class="span2 unit"><input name="provider_hours_sunday" type="text" placeholder="i.e. 9am - 5pm"></div>
+										<div class="span2 unit"><input name="provider_hours_monday" type="text"></div>
+										<div class="span6 unit"><input name="provider_hours_tuesday" type="text"></div>
+										<!-- end schedule lunch -->
+									</div>
+									<div class="j-row">
+										<!-- start schedule meeting -->
+										<div class="span2 unit"><input type="text" placeholder="Wednesday" disabled></div>
+										<div class="span2 unit"><input name="provider_hours_sunday" type="text" placeholder="i.e. 9am - 5pm"></div>
+										<div class="span2 unit"><input name="provider_hours_monday" type="text"></div>
+										<div class="span6 unit"><input name="provider_hours_tuesday" type="text"></div>
+										<!-- end schedule meeting -->
+									</div>
+									<div class="j-row">
+										<!-- start schedule comments -->
+										<div class="span2 unit"><input type="text" placeholder="Thursday" disabled></div>
+										<div class="span2 unit"><input name="provider_hours_sunday" type="text" placeholder="i.e. 9am - 5pm"></div>
+										<div class="span2 unit"><input name="provider_hours_monday" type="text"></div>
+										<div class="span6 unit"><input name="provider_hours_tuesday" type="text"></div>
+										<!-- end schedule comments -->
+									</div>
+									<div class="j-row">
+										<!-- start schedule comments -->
+										<div class="span2 unit"><input type="text" placeholder="Friday" disabled></div>
+										<div class="span2 unit"><input name="provider_hours_sunday" type="text" placeholder="i.e. 9am - 5pm"></div>
+										<div class="span2 unit"><input name="provider_hours_monday" type="text"></div>
+										<div class="span6 unit"><input name="provider_hours_tuesday" type="text"></div>
+										<!-- end schedule comments -->
+									</div>
+									<div class="j-row">
+										<!-- start schedule comments -->
+										<div class="span2 unit"><input type="text" placeholder="Saturday" disabled></div>
+										<div class="span2 unit"><input name="provider_hours_sunday" type="text" placeholder="i.e. 9am - 5pm"></div>
+										<div class="span2 unit"><input name="provider_hours_monday" type="text"></div>
+										<div class="span6 unit"><input name="provider_hours_tuesday" type="text"></div>
+										<!-- end schedule comments -->
+									</div>
+								</div>
+							</div>
 						</div>
-						<script src="assets\js\scripts.js"></script>
-					</body>
-				</html>
-			</html>
+						<!-- end /.toclone -->
+					</fieldset>
+					<!-- End Providers -->
+					<!-- Start Users -->
+					<fieldset>
+						<div class="divider gap-bottom-25"></div>
+						<h2>Instructions</h2>
+						<p class="lead">Please provide a list of users and indicate appropriate roles of that user within your practice. A user is anyone who will need to log into your database.</p>
+						<div class="divider gap-bottom-25"></div>
+						<div id="animate-clone-users" class="clone-users">
+							<div class="toclone cloneya">
+								<a href="#" class="link clone">Add Another User</a>
+								<a href="#" class="link delete">Delete User</a>
+								<div class="j-row">
+									<!-- start user first name -->
+									<div class="span4 unit">
+										<div class="input">
+											<input type="text" placeholder="First Name" name="user_first_name">
+										</div>
+									</div>
+									<!-- end user first name -->
+									<!-- start user last name -->
+									<div class="span4 unit">
+										<div class="input">
+											<input type="text" placeholder="Last Name" name="user_last_name">
+										</div>
+									</div>
+									<!-- end user last name -->
+									<!-- start user email -->
+									<div class="span4 unit">
+										<div class="input">
+											<input type="email" placeholder="Email" name="user_email">
+										</div>
+									</div>
+								</div>
+								<!-- end user email -->
+								<!-- start user role admin -->
+								<div class="j-row">
+									<div class="span2 unit">
+										<label class="checkbox">
+											<input value="admin" type="checkbox" id="user-admin" name="user_admin">
+											<i title="Full access to all functions of the system."></i>
+											Admin
+										</label>
+									</div>
+									<!-- end user role admin -->
+									<!-- start user role ancillary -->
+									<div class="span2 unit">
+										<label class="checkbox">
+											<input value="ancillary" type="checkbox" name="user_ancillary">
+											<i title="Partial access to the clinical chart, no ability to sign notes or send prescriptions."></i>
+											Ancillary
+										</label>
+									</div>
+									<!-- end user role ancillary -->
+									<!-- start user role billing -->
+									<div class="span2 unit">
+										<label class="checkbox">
+											<input value="billing" type="checkbox" name="user_billing">
+											<i title="Full access to practice financials."></i>
+											Billing
+										</label>
+									</div>
+									<!-- end user role billing -->
+									<!-- start user role front office -->
+									<div class="span2 unit">
+										<label class="checkbox">
+											<input value="front office" type="checkbox" name="user_front_office">
+											<i title="Full access to the scheduler and patient balances"></i>
+											Front Office
+										</label>
+									</div>
+									<!-- end user role front office -->
+									<!-- start user role provider -->
+									<div class="span2 unit">
+										<label class="checkbox">
+											<input value="provider" type="checkbox" name="user_provider">
+											<i title="Full access to the clinical chart, with ability to sign notes and send prescriptions"></i>
+											Provider
+										</label>
+									</div>
+									<!-- end user role provider -->
+								</div>
+							</div>
+						</div>
+					</fieldset>
+					<!-- End Users -->
+					<!-- Start Locations -->
+					<fieldset>
+						<div class="divider gap-bottom-25"></div>
+						<h2>Instructions</h2>
+						<p class="lead">Please fill out the following information for all service locations (clinics, hospitals,off-site,etc.) associated with appointments and claims.</p>
+						<div class="divider gap-bottom-25"></div>
+						<div id="animate-clone-locations" class="clone-locations">
+							<div class="toclone cloneya">
+								<a href="#" class="link clone">Add Another Location</a>
+								<a href="#" class="link delete">Delete Location</a>
+								<div class="j-row">
+									<!-- start location name -->
+									<div class="span12 unit">
+										<div class="input">
+											<input type="text" placeholder="Name" name="location_name">
+										</div>
+									</div>
+									<!-- end location name -->
+								</div>
+								<div class="j-row">
+									<!-- start location pos -->
+									<div class="span4 unit">
+										<div class="unit">
+
+											<select>
+												<option selected disabled>
+													Please select your POS
+												</option>
+												<option value="01 Pharmacy">01 Pharmacy</option>
+												<option value="03 School">03 School</option>
+												<option value="04 Homeless Shelter">04 Homeless Shelter</option>
+												<option value="05 Indian Health Service Free-Standing Facility">05 Indian Health Service Free-Standing Facility</option>
+												<option value="06 Indian Health Service Provider-based Facility">06 Indian Health Service Provider-based Facility</option>
+												<option value="07 Tribal 638 Provider-based Facility">07 Tribal 638 Provider-based Facility</option>
+												<option value="08 Tribal 638 Provider-based Facility">08 Tribal 638 Provider-based Facility</option>
+												<option value="09 Prison/Correctional Facility">09 Prison/Correctional Facility</option>
+												<option value="11 Office">11 Office</option>
+												<option value="12 Home">12 Home</option>
+												<option value="13 Assisted Living Facility">13 Assisted Living Facility</option>
+												<option value="14 Group Home">14 Group Home</option>
+												<option value="15 Mobile Unit">15 Mobile Unit</option>
+												<option value="20 Urgent Care">20 Urgent Care</option>
+												<option value="21 IP Hosp">21 IP Hosp</option>
+												<option value="22 OP Hosp">22 OP Hosp</option>
+												<option value="23 ER Hosp">23 ER Hosp</option>
+												<option value="24 Amb Surg Ctr">24 Amb Surg Ctr</option>
+												<option value="25 Birthing Ctr">25 Birthing Ctr</option>
+												<option value="26 Military Trtmnt Fac">26 Military Trtmnt Fac</option>
+												<option value="31 Skilled Nur Fac">31 Skilled Nur Fac</option>
+												<option value="32 Nur Fac">32 Nur Fac</option>
+												<option value="33 Cust Care Fac">33 Cust Care Fac</option>
+												<option value="34 Hospice">34 Hospice</option>
+												<option value="41 Amb - Land">41 Amb - Land</option>
+												<option value="42 Amb - Air/Water">42 Amb - Air/Water</option>
+												<option value="49 Independent Clinic">49 Independent Clinic</option>
+												<option value="50 Fed Qual Hlth Ctr">50 Fed Qual Hlth Ctr</option>
+												<option value="51 IP Psy Fac">51 IP Psy Fac</option>
+												<option value="52 Psy Fac Prtl Hosp">52 Psy Fac Prtl Hosp</option>
+												<option value="53 Comm Ment Hlth Ctr">53 Comm Ment Hlth Ctr</option>
+												<option value="54 Intmed Care Fac/Ment Ret">54 Intmed Care Fac/Ment Ret</option>
+												<option value="55 Res Sub Abuse Trmt Fac">55 Res Sub Abuse Trmt Fac</option>
+												<option value="56 Psy Red Trmnt Ctr">56 Psy Red Trmnt Ctr</option>
+												<option value="57 Non-residential Sub Abu Trmnt Fac">57 Non-residential Sub Abu Trmnt Fac</option>
+												<option value="60 Mass Immun Ctr">60 Mass Immun Ctr</option>
+												<option value="61 Comp IP Rehab Fac">61 Comp IP Rehab Fac</option>
+												<option value="62 Comp OP Rehab Fac">62 Comp OP Rehab Fac</option>
+												<option value="65 ESRD Trtmnt Fac">65 ESRD Trtmnt Fac</option>
+												<option value="71 St/Loc Pub Hlth Clnc">71 St/Loc Pub Hlth Clnc</option>
+												<option value="81 Ind Lab">81 Ind Lab</option>
+												<option value="99 Other Uncl Fac">99 Other Uncl Fac</option>
+											</select>
+											<i class="fa fa-sort-desc" aria-hidden="true"></i>
+										</div>
+									</div>
+									<!-- start location phone -->
+									<div class="span4 unit">
+										<div class="input">
+											<input type="email" placeholder="Phone" id="location-phone" name="location_phone">
+										</div>
+									</div>
+									<!-- end location phone  -->
+									<!-- start location fax -->
+									<div class="span4 unit">
+										<div class="input">
+											<input type="text" placeholder="Fax" name="location_fax" id="location-fax">
+										</div>
+									</div>
+									<!-- end location fax -->
+								</div>
+								<div class="j-row">
+									<!-- start location address -->
+									<div class="span12 unit">
+										<div class="input">
+											<input type="text" placeholder="Address" name="location_address">
+										</div>
+									</div>
+									<!-- end location address -->
+								</div>
+								<div class="j-row">
+									<!-- start location city -->
+									<div class="span4 unit">
+										<div class="input">
+											<input type="text" placeholder="City" name="location_city">
+										</div>
+									</div>
+									<!-- end location city -->
+									<!-- start location state -->
+									<div class="span4 unit">
+										<div class="unit">
+											<select>
+												<option disabled selected>
+													Select state
+												</option>
+												<option value="AL">Alabama</option>
+												<option value="AK">Alaska</option>
+												<option value="AZ">Arizona</option>
+												<option value="AR">Arkansas</option>
+												<option value="CA">California</option>
+												<option value="CO">Colorado</option>
+												<option value="CT">Connecticut</option>
+												<option value="DE">Delaware</option>
+												<option value="DC">District Of Columbia</option>
+												<option value="FL">Florida</option>
+												<option value="GA">Georgia</option>
+												<option value="HI">Hawaii</option>
+												<option value="ID">Idaho</option>
+												<option value="IL">Illinois</option>
+												<option value="IN">Indiana</option>
+												<option value="IA">Iowa</option>
+												<option value="KS">Kansas</option>
+												<option value="KY">Kentucky</option>
+												<option value="LA">Louisiana</option>
+												<option value="ME">Maine</option>
+												<option value="MD">Maryland</option>
+												<option value="MA">Massachusetts</option>
+												<option value="MI">Michigan</option>
+												<option value="MN">Minnesota</option>
+												<option value="MS">Mississippi</option>
+												<option value="MO">Missouri</option>
+												<option value="MT">Montana</option>
+												<option value="NE">Nebraska</option>
+												<option value="NV">Nevada</option>
+												<option value="NH">New Hampshire</option>
+												<option value="NJ">New Jersey</option>
+												<option value="NM">New Mexico</option>
+												<option value="NY">New York</option>
+												<option value="NC">North Carolina</option>
+												<option value="ND">North Dakota</option>
+												<option value="OH">Ohio</option>
+												<option value="OK">Oklahoma</option>
+												<option value="OR">Oregon</option>
+												<option value="PA">Pennsylvania</option>
+												<option value="RI">Rhode Island</option>
+												<option value="SC">South Carolina</option>
+												<option value="SD">South Dakota</option>
+												<option value="TN">Tennessee</option>
+												<option value="TX">Texas</option>
+												<option value="UT">Utah</option>
+												<option value="VT">Vermont</option>
+												<option value="VA">Virginia</option>
+												<option value="WA">Washington</option>
+												<option value="WV">West Virginia</option>
+												<option value="WI">Wisconsin</option>
+												<option value="WY">Wyoming</option>
+											</select>
+											<i class="fa fa-sort-desc" aria-hidden="true"></i>
+										</div>
+									</div>
+									<!-- end location state -->
+									<!-- start location zip -->
+									<div class="span4 unit">
+										<div class="input">
+											<input type="text" placeholder="Zip" id="location-zip" name="location_zip">
+										</div>
+									</div>
+									<!-- end location zip -->
+								</div>
+							</div>
+						</div>
+					</fieldset>
+					<!-- End Locations -->
+					<!-- start appointment types -->
+					<fieldset>
+						<div class="divider gap-bottom-25"></div>
+						<h2>Instructions</h2>
+						<p class="lead">Please provide a list of the types of appointments that you schedule at your office. Please note, this should not be a list of your billing codes. Appointment types are used to facilitate accurate scheduling times within the system
+							(i.e. New patient Visit – 30 minutes).</p>
+						<div class="divider gap-bottom-25"></div>
+						<div id="animate-clone-appts" class="clone-appts">
+							<div class="toclone cloneya">
+								<a href="#" class="link clone">Add Another Appointment Type</a>
+								<a href="#" class="link delete">Delete Appointment Type</a>
+								<div class="j-row">
+									<div class="span4 unit">
+										<div class="input">
+											<input type="text" placeholder="Appointment Type" name="appointment_type">
+										</div>
+									</div>
+									<div class="span4 unit">
+										<div class="input">
+											<input type="text" placeholder="Duration (mins)" name="appointment_duration">
+										</div>
+									</div>
+									<div class="span3 unit">
+										<div class="input">
+											<input type="text" placeholder="Assosicated Resource/s" name="appointment_resource">
+										</div>
+									</div>
+									<div class="span1 unit">
+										<label class="checkbox">
+											<input value="all" type="checkbox" name="appointment_resource_all">
+											<i></i>
+											All
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+					<!-- end appointment types -->
+					<!-- Start Payers -->
+					<fieldset>
+						<div class="divider gap-bottom-25"></div>
+						<h2>Instructions</h2>
+						<p class="lead">Please fill out the following information for the practice’s most common payers. The address column should be the address where claims are sent. Place a ‘Y’ in the eClaims column if you plan to send claims electronically for this
+							payer. Select 'Yes' in the ERA columns if you would like to receive electronic EOB’s.</p>
+						<div class="divider gap-bottom-25"></div>
+						<div class="j-row">
+							<div class="span6 unit">
+								<label class="checkbox">
+									<input value="Load common payers in my state" type="checkbox" name="appointment_resource_all">
+									<i></i>
+									Load common payers in my state
+								</label>
+							</div>
+						</div>
+						<div class="divider gap-bottom-25"></div>
+						<div id="animate-clone-payers" class="clone-payers">
+							<div class="toclone cloneya">
+								<a href="#" class="link clone">Add Another Payer</a>
+								<a href="#" class="link delete">Delete Payer</a>
+								<div class="j-row">
+									<!-- start payer name -->
+									<div class="span12 unit">
+										<div class="input">
+											<input type="text" placeholder="Payer Name" name="payer_name">
+										</div>
+									</div>
+									<!-- end payer name -->
+								</div>
+								<div class="j-row">
+									<!-- payer address -->
+									<div class="span12 unit">
+										<div class="input">
+											<input type="text" placeholder="Address" name="payer_address">
+										</div>
+									</div>
+									<!-- end payer address -->
+								</div>
+								<div class="j-row">
+									<!-- start payer ID -->
+									<div class="span4 unit">
+										<div class="input">
+											<input type="email" placeholder="Payer ID" name="payer_id">
+										</div>
+									</div>
+									<!-- end payer ID -->
+									<!-- start eclaims -->
+									<div class="span4 unit">
+										<div class="unit">
+											<select>
+												<option disabled selected>
+													Do you plan on sending eclaims?
+												</option>
+												<option value="0">Yes</option>
+												<option value="1">No</option>
+											</select>
+											<i class="fa fa-sort-desc" aria-hidden="true"></i>
+
+										</div>
+									</div>
+									<!-- end eclaims -->
+									<!-- start era -->
+									<div class="span4 unit">
+										<div class="unit">
+											<select>
+												<option disabled selected>
+													Do you want o receive electronic EOB's?
+												</option>
+												<option value="0">Yes</option>
+												<option value="1">No</option>
+											</select>
+											<i class="fa fa-sort-desc" aria-hidden="true"></i>
+										</div>
+									</div>
+									<!-- end era -->
+								</div>
+							</div>
+						</div>
+					</fieldset>
+					<!-- End Payers -->
+					<!-- Start Additional Services -->
+					<fieldset>
+						<div class="divider gap-bottom-25"></div>
+						<div class="j-row">
+							<div class="span12 unit">
+								<h2>
+									<font style="color: #0072cb">100</font>
+									Free Automated Appointment Reminders</h2>
+								<p class="lead">Now you can increase your practice's revenues and improve patient attendance rates by sending email, text and phone call appointment reminders to your patients. It's simple. For just $0.10 each, you can now efficiently and effectively
+									send friendly reminders to your patients. There are no setup fees, no long-term contracts or cancellation penalties. Simply pay as you go for whatever you use.<br>
+									<b>Your first 100 reminders are on us if you sign-up now!</b>
+								</p>
+								<a class="typeform-share primary-btn left" href="https://iSALUShealthcare.typeform.com/to/b95EDU" data-mode="1" target="_blank">Sign Up Today!</a>
+								<script>
+									(function () {
+										var qs,
+											js,
+											q,
+											s,
+											d = document,
+											gi = d.getElementById,
+											ce = d.createElement,
+											gt = d.getElementsByTagName,
+											id = 'typef_orm',
+											b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+										if (!gi.call(d, id)) {
+											js = ce.call(d, 'script');
+											js.id = id;
+											js.src = b + 'share.js';
+											q = gt.call(d, 'script')[0];
+											q.parentNode.insertBefore(js, q)
+										}
+										id = id + '_';
+										if (!gi.call(d, id)) {
+											qs = ce.call(d, 'link');
+											qs.rel = 'stylesheet';
+											qs.id = id;
+											qs.href = b + 'share-button.css';
+											s = gt.call(d, 'head')[0];
+											s.appendChild(qs, s)
+										}
+									})()
+								</script>
+							</div>
+
+						</div>
+					</fieldset>
+					<fieldset>
+						<div class="divider gap-bottom-25"></div>
+						<div class="span12 unit">
+							<h2>
+								<font style="color: #0072cb">100</font>
+								Free Electronic Statements</h2>
+							<p class="lead">Increase your office productivity and automate your AR process! Electronic statements offers you the ability to have your statements automatically printed, put in an envelope, postage added, and sent to your patient’s home with just a
+								few clicks! The best part about this service is that it only costs $0.78 per statement and this INCLUDES postage which is typically $0.49 by itself.<br>
+								<b>We are so confident that you will love your automated statements, that we will pay for the first 100.</b>
+							</p>
+							<a class="typeform-share primary-btn left" href="https://iSALUShealthcare.typeform.com/to/lzHCJ9" data-mode="1" target="_blank">Sign Up Today!</a>
+							<script>
+								(function () {
+									var qs,
+										js,
+										q,
+										s,
+										d = document,
+										gi = d.getElementById,
+										ce = d.createElement,
+										gt = d.getElementsByTagName,
+										id = 'typef_orm',
+										b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+									if (!gi.call(d, id)) {
+										js = ce.call(d, 'script');
+										js.id = id;
+										js.src = b + 'share.js';
+										q = gt.call(d, 'script')[0];
+										q.parentNode.insertBefore(js, q)
+									}
+									id = id + '_';
+									if (!gi.call(d, id)) {
+										qs = ce.call(d, 'link');
+										qs.rel = 'stylesheet';
+										qs.id = id;
+										qs.href = b + 'share-button.css';
+										s = gt.call(d, 'head')[0];
+										s.appendChild(qs, s)
+									}
+								})()
+							</script>
+						</div>
+					</fieldset>
+					<fieldset>
+						<div class="divider gap-bottom-25"></div>
+						<div class="span12 unit">
+							<h2>
+								<font style="color: #0072cb">100</font>
+								Free Integrated Faxes</h2>
+							<p class="lead">iSALUS' OfficeEMR™ offers you the ability to electronically integrate faxes directly into your EMR. In the effort to help your office go paperless and run more efficiently, we would like to assist you in setting up this amazing
+								service. Essentially, you have the ability to allow both inbound and/ or outbound faxes to be delivered electronically to your office. iSALUS has teamed up with the nationally recognized company j2 / MyFax Corporate to provide this service.<br>
+								<b>Try this service out for free – the first 100 pages you send or receive will cost absolutely nothing!</b>
+							</p>
+
+							<a class="primary-btn left typeform-share" href="https://iSALUShealthcare.typeform.com/to/GBlJIZ" data-mode="1" target="_blank">Sign Up Today!</a>
+
+							<script>
+								(function () {
+									var qs,
+										js,
+										q,
+										s,
+										d = document,
+										gi = d.getElementById,
+										ce = d.createElement,
+										gt = d.getElementsByTagName,
+										id = 'typef_orm',
+										b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+									if (!gi.call(d, id)) {
+										js = ce.call(d, 'script');
+										js.id = id;
+										js.src = b + 'share.js';
+										q = gt.call(d, 'script')[0];
+										q.parentNode.insertBefore(js, q)
+									}
+									id = id + '_';
+									if (!gi.call(d, id)) {
+										qs = ce.call(d, 'link');
+										qs.rel = 'stylesheet';
+										qs.id = id;
+										qs.href = b + 'share-button.css';
+										s = gt.call(d, 'head')[0];
+										s.appendChild(qs, s)
+									}
+								})()
+							</script>
+						</div>
+					</fieldset>
+
+					<!-- End Additional Services -->
+					<!-- Start Documents -->
+					<fieldset>
+						<div class="divider gap-bottom-25"></div>
+						<h2>Instructions</h2>
+						<p class="lead">Please provide the following documents to iSALUS Healthcare. You may attach them to the email when you return this document, or fax them to us at (317)536-3978.</p>
+						<div class="divider gap-bottom-25"></div>
+						<h2>Billing</h2>
+						<div class="j-row">
+							<!-- start upload fee schedule -->
+							<div class="span5 unit">
+								<label class="input append-small-btn">
+									<div class="file-button">
+										Browse
+										<input type="file" name="fee_schedule" onchange="document.getElementById('fee_schedule_input').value = this.value;">
+									</div>
+									<input type="text" id="fee_schedule_input" readonly="" placeholder="Fee Schedule">
+								</label>
+							</div>
+							<div class="span1 unit">
+								<button onclick="clearFileInputField('fee_schedule_input')" href="javascript:noAction();" class="tertiary-btn">Clear</button>
+							</div>
+							<!-- end upload fee schedule -->
+							<!-- start upload superbill -->
+							<div class="span5 unit">
+								<label class="input append-small-btn">
+									<div class="file-button">
+										Browse
+										<input type="file" name="superbill" onchange="document.getElementById('superbill_input').value = this.value;">
+									</div>
+									<input type="text" id="superbill_input" readonly="" placeholder="Superbill">
+								</label>
+							</div>
+							<div class="span1 unit">
+								<button type="reset" class="tertiary-btn">Clear</button>
+							</div>
+							<!-- end upload superbill -->
+						</div>
+						<div class="divider gap-bottom-25"></div>
+						<h2>EMR</h2>
+						<div class="j-row">
+							<!-- start upload practice logo -->
+							<div class="span5 unit">
+								<label class="input append-small-btn">
+									<div class="file-button">
+										Browse
+										<input type="file" name="practice_logo" onchange="document.getElementById('practice_logo_input').value = this.value;">
+									</div>
+									<input type="text" id="practice_logo_input" readonly="" placeholder="Practice Logo">
+								</label>
+							</div>
+							<div class="span1 unit">
+								<button type="reset" class="tertiary-btn">Clear</button>
+							</div>
+							<!-- end upload practice logo -->
+							<!-- start upload letterhead -->
+							<div class="span5 unit">
+								<label class="input append-small-btn">
+									<div class="file-button">
+										Browse
+										<input type="file" name="letterhead" onchange="document.getElementById('letterhead_input').value = this.value;">
+									</div>
+									<input type="text" id="letterhead_input" readonly="" placeholder="Letterhead">
+								</label>
+							</div>
+							<div class="span1 unit">
+								<button type="reset" class="tertiary-btn">Clear</button>
+							</div>
+							<!-- end upload letterhead -->
+						</div>
+						<div class="j-row">
+							<!-- start upload templates -->
+							<div class="span5 unit">
+								<label class="input append-small-btn">
+									<div class="file-button">
+										Browse
+										<input type="file" name="templates" onchange="document.getElementById('templates_input').value = this.value;">
+									</div>
+									<input type="text" id="templates_input" readonly="" placeholder="Templates">
+								</label>
+							</div>
+							<div class="span1 unit">
+								<button type="reset" class="tertiary-btn">Clear</button>
+							</div>
+							<!-- end upload templates -->
+							<!-- start upload other -->
+							<div class="span5 unit">
+								<label class="input append-small-btn">
+									<div class="file-button">
+										Browse
+										<input type="file" name="other" onchange="document.getElementById('other_input').value = this.value;">
+									</div>
+									<input type="text" id="other_input" readonly="" placeholder="Other">
+								</label>
+							</div>
+							<div class="span1 unit">
+								<button type="reset" class="tertiary-btn">Clear</button>
+							</div>
+							<!-- end upload other -->
+						</div>
+						<div id="animate-clone-documents" class="clone-documents">
+							<div class="divider gap-bottom-25"></div>
+							<h2>Additional Documents</h2>
+							<div class="toclone cloneya">
+
+								<a href="#" class="link clone">Add Additional Documents</a>
+								<a href="#" class="link delete">Remove Additional Documents</a>
+								<div class="j-row">
+									<!-- start upload fee schedule -->
+									<div class="span6 unit">
+										<label class="input append-small-btn">
+											<div class="file-button">
+												Browse
+												<input type="file" name="additional_document_1" onchange="document.getElementById('fee_schedule_input').value = this.value;">
+											</div>
+											<input type="text" id="additonal-document-1" readonly="" placeholder="Additional Document">
+										</label>
+									</div>
+									<!-- end upload fee schedule -->
+									<!-- start upload superbill -->
+									<div class="span5 unit">
+										<label class="input append-small-btn">
+											<div class="file-button">
+												Browse
+												<input type="file" name="additional_document_2" onchange="document.getElementById('superbill_input').value = this.value;">
+											</div>
+											<input type="text" id="additonal-document-2" readonly="" placeholder="Additional Document">
+										</label>
+									</div>
+									<div class="span1 unit">
+										<button type="reset" class="tertiary-btn">Clear</button>
+									</div>
+									<!-- end upload superbill -->
+								</div>
+							</div>
+						</div>
+						<button type="reset" class="tertiary-btn">Clear All Documents</button>
+					</fieldset>
+					<!-- End Documents -->
+
+					<!-- end files -->
+
+				</div>
+				<!-- end /.content -->
+
+				<div class="footer"><button t <button type="submit" class="primary-btn multi-submit-btn">Send</button>
+				<button type="button" class="primary-btn multi-next-btn">Next</button>
+				<button type="button" class="primary-btn multi-prev-btn">Back</button>
+				<button style="float:left; margin-left: 0px;" class="primary-btn">Save Progress</button>
+			</div>
+			<!-- end /.footer -->
+		</form>
+	</div>
+	<script src="assets\js\scripts.js"></script>
+	<script>
+		function clearFileInputField(tagId) {
+			document.getElementById(tagId).innerHTML = document.getElementById(tagId).innerHTML;
+		}
+	</script>
+</body>
+</html>
+</html>
